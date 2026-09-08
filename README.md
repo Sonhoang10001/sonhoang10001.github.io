@@ -1,1 +1,5 @@
-Upload toàn bộ ZIP lên Netlify. / là editor, /vip là khách đặc biệt, /photo là khách chụp ảnh.
+Bản V2 hài hòa hơn.
+- / : editor
+- /vip : khách VIP
+- /photo : khách chụp ảnh
+GitHub Pages: các ảnh nằm trong assets/ nên cần upload nguyên thư mục assets.
