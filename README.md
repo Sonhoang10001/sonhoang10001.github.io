@@ -1,0 +1,1 @@
+Upload toàn bộ ZIP lên Netlify. / là editor, /vip là khách đặc biệt, /photo là khách chụp ảnh.
