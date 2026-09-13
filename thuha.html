@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5B0B14">
+  <meta name="description"
+        content="Thư mời Lễ Tốt nghiệp Đại học FPT 2026 của Hoàng Hải Sơn — 15.09.2026">
+  <title>Thư mời tốt nghiệp · Hoàng Hải Sơn</title>
+
+  <!-- ==================== GOOGLE FONTS ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+/* ==================== HÀNG ICON VÀ TÊN ĐỊA ĐIỂM ==================== */
+#location .venue-row {
+  display: grid;
+
+  /* Icon trái – tiêu đề giữa – vùng cân bằng phải */
+  grid-template-columns: 58px auto 58px;
+  align-items: center;
+  column-gap: 20px;
+
+  width: fit-content;
+  max-width: 100%;
+  margin: 8px auto 0;
+}
+
+/* Tạo một vùng trống bằng kích thước icon ở bên phải */
+#location .venue-row::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+}
+
+/* Icon location */
+#location .venue-row .pin {
+  display: grid;
+  place-items: center;
+
+  width: 58px;
+  height: 58px;
+  margin: 0;
+
+  border: 1px solid rgba(255, 215, 0, 0.38);
+  border-radius: 17px;
+
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.07);
+
+  box-shadow:
+    0 0 22px rgba(255, 215, 0, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Tên địa điểm */
+#location .venue-row .venue {
+  width: auto;
+  max-width: 720px;
+  margin: 0;
+
+  color: #fff8e8;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(34px, 4.3vw, 52px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+  text-align: center;
+
+  text-shadow:
+    0 3px 14px rgba(255, 215, 0, 0.12),
+    0 0 30px rgba(243, 229, 171, 0.06);
+}
+/* Khoảng cách giữa các thành phần */
+#location .location-card .eyebrow {
+  margin: 0 auto 15px;
+}
+
+#location .location-divider {
+  width: min(340px, 70%);
+  margin: 24px auto 20px;
+}
+
+#location .location-card .floor {
+  margin: 0 auto 7px;
+}
+
+#location .location-card address {
+  margin: 0 auto 24px;
+}
+
+#location .location-card .button {
+  margin: 0 auto;
+}
+}
+  /* ==================== LỜI BIẾT ƠN CÂN GIỮA ==================== */
+
+#gratitude .gratitude-layout {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+#gratitude .gratitude-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 560px;
+  padding: 55px clamp(35px, 7vw, 90px);
+
+  overflow: hidden;
+}
+
+/* Vùng ánh sáng vàng nhẹ ở giữa thẻ */
+#gratitude .gratitude-card::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  left: 50%;
+
+  width: 720px;
+  height: 430px;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.045),
+    transparent 70%
+  );
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Đảm bảo nội dung nằm trên vùng sáng */
+#gratitude .gratitude-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Đường trang trí phía trên */
+#gratitude .gratitude-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: min(330px, 75%);
+  margin: 0 auto 22px;
+
+  color: #ffd700;
+}
+
+#gratitude .gratitude-ornament span {
+  display: block;
+  flex: 1;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.65)
+  );
+}
+
+#gratitude .gratitude-ornament span:last-child {
+  transform: rotate(180deg);
+}
+
+#gratitude .gratitude-ornament b {
+  color: #ffd700;
+  font-size: 10px;
+  font-weight: 400;
+
+  filter: drop-shadow(
+    0 0 7px rgba(255, 215, 0, 0.6)
+  );
+}
+
+/* Dòng tiếng Anh */
+#gratitude .eyebrow {
+  width: 100%;
+  margin: 0 auto 10px;
+
+  color: #f3e5ab;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Tiêu đề */
+#gratitude .heading {
+  width: 100%;
+  margin: 0 auto 29px;
+
+  color: #fff8e8;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+
+  text-shadow:
+    0 3px 14px rgba(255, 215, 0, 0.12),
+    0 0 30px rgba(243, 229, 171, 0.06);
+}
+
+/* Khối nội dung */
+#gratitude .gratitude-content {
+  width: 100%;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+#gratitude .gratitude-content p {
+  margin: 0 0 18px;
+
+  color: rgba(255, 248, 232, 0.78);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.95;
+  text-align: left;
+}
+
+/* Làm chữ đầu đoạn mở đầu nổi bật */
+#gratitude .gratitude-content p:first-child::first-letter {
+  float: left;
+
+  margin: 7px 8px 0 0;
+
+  color: #f3e5ab;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0.75;
+
+  text-shadow: 0 2px 10px rgba(255, 215, 0, 0.18);
+}
+
+/* Khu vực chữ ký */
+#gratitude .signature-area {
+  width: 100%;
+  max-width: 670px;
+  margin: 18px auto 0;
+  text-align: right;
+}
+
+#gratitude .signature-label {
+  display: block;
+  margin: 0 8px -4px 0;
+
+  color: rgba(255, 248, 232, 0.62);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
+#gratitude .signature {
+  margin: 0;
+
+  color: #f3e5ab;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(40px, 6vw, 57px);
+  font-weight: 400;
+  line-height: 1.35;
+
+  text-shadow:
+    0 2px 10px rgba(255, 215, 0, 0.24),
+    0 0 25px rgba(243, 229, 171, 0.08);
+}
+
+#gratitude .signature-role {
+  display: block;
+  margin-top: -4px;
+
+  color: rgba(255, 248, 232, 0.58);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+   /* ==================== CÂN ĐỐI KHỐI ĐỊA ĐIỂM — BẢN CUỐI ==================== */
+
+/* Căn giữa toàn bộ khung địa điểm */
+#location .location-layout {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Căn giữa toàn bộ nội dung bên trong */
+#location .location-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 420px;
+  padding: 50px 35px;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Ánh sáng nhẹ ở tâm */
+#location .location-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 650px;
+  height: 330px;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.05),
+    transparent 70%
+  );
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Đưa nội dung lên trên vùng sáng */
+#location .location-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon địa điểm */
+#location .location-card .pin {
+  display: grid;
+  place-items: center;
+
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 22px;
+
+  border: 1px solid rgba(255, 215, 0, 0.38);
+  border-radius: 17px;
+
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.07);
+
+  box-shadow:
+    0 0 24px rgba(255, 215, 0, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Dòng tiếng Anh */
+#location .location-card .eyebrow {
+  width: 100%;
+  margin: 0 auto 10px;
+
+  color: #f3e5ab;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Tên địa điểm */
+#location .location-card .venue {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+
+  color: #fff8e8;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(32px, 4.5vw, 50px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  text-shadow:
+    0 3px 14px rgba(255, 215, 0, 0.12),
+    0 0 30px rgba(243, 229, 171, 0.06);
+}
+
+/* Đường trang trí hai bên ngôi sao */
+#location .location-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: min(360px, 75%);
+  margin: 19px auto;
+
+  color: #ffd700;
+}
+
+#location .location-divider span {
+  display: block;
+  flex: 1;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.65)
+  );
+}
+
+#location .location-divider span:last-child {
+  transform: rotate(180deg);
+}
+
+#location .location-divider b {
+  display: block;
+
+  color: #ffd700;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+
+  filter: drop-shadow(
+    0 0 7px rgba(255, 215, 0, 0.6)
+  );
+}
+
+/* Thông tin hội trường */
+#location .location-card .floor {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 8px;
+
+  color: #f3e5ab;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Địa chỉ */
+#location .location-card address {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 25px;
+
+  color: rgba(255, 248, 232, 0.72);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Nút chỉ đường */
+#location .location-card .button {
+  width: auto;
+  min-width: 275px;
+  margin: 0 auto;
+}
+   /* ==================== BIẾN & THIẾT LẬP ==================== */
+    :root {
+      color-scheme: dark;
+      --wine: #5B0B14;
+      --red: #8B0000;
+      --orange: #F26F21;
+      --gold: #FFD700;
+      --amber: #FFA500;
+      --cream: #F3E5AB;
+      --text: #FFF8E8;
+      --muted: #E4C9BD;
+      --border: rgba(243, 229, 171, .25);
+      --sans: "Montserrat", Arial, sans-serif;
+      --serif: "Playfair Display", Georgia, serif;
+      --script: "Great Vibes", cursive;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      isolation: isolate;
+      color: var(--text);
+      background: #26050C;
+      font: 400 15px/1.8 var(--sans);
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      background:
+        radial-gradient(ellipse at 10% 5%, #F26F2140, transparent 45%),
+        radial-gradient(ellipse at 90% 40%, #FFD70012, transparent 40%),
+        linear-gradient(145deg, #23040B, #5B0B14 50%, #8B0000 110%);
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .3;
+      background-image:
+        linear-gradient(#F3E5AB0B 1px, transparent 1px),
+        linear-gradient(90deg, #F3E5AB0B 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; cursor: pointer; }
+    a { color: inherit; }
+    button, a { touch-action: manipulation; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 6px; }
+    ::selection { background: var(--cream); color: var(--wine); }
+    [hidden] { display: none !important; }
+    h1, h2, h3, p { margin-top: 0; }
+    svg { display: block; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: auto; }
+    .section { padding: 65px 0; }
+    .center { text-align: center; }
+    .eyebrow {
+      color: var(--cream);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+    }
+    .heading {
+      font: 600 clamp(28px, 4.5vw, 46px)/1.3 var(--serif);
+      margin-bottom: 16px;
+    }
+    .lead { max-width: 620px; margin: 0 auto 34px; color: var(--muted); }
+    .glass {
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      background: linear-gradient(135deg, #FFFFFF0F, #FFFFFF04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px #FFD70024, 0 24px 70px #17010740;
+    }
+    .gold {
+      color: var(--cream);
+      background: linear-gradient(
+        110deg, #B88429, #F3E5AB 24%, #FFD700 40%,
+        #FFF9D8 50%, #FFA500 65%, #F3E5AB 85%
+      );
+      background-size: 220% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gold 7s linear infinite;
+    }
+    @keyframes gold { to { background-position: 220% center; } }
+
+    /* ==================== NÚT BẤM ==================== */
+    .button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 14px 24px;
+      overflow: hidden;
+      border: 1px solid #FFE7A17A;
+      border-radius: 50px;
+      background: linear-gradient(115deg, #F3E5AB, #FFD700, #FFA500);
+      color: #420D11;
+      font: 800 11px/1.5 var(--sans);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 8px 30px #FFA50025;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .button::after {
+      content: "";
+      position: absolute;
+      top: -80%;
+      left: -70%;
+      width: 35%;
+      height: 260%;
+      background: linear-gradient(90deg, transparent, #FFFFFF90, transparent);
+      transform: rotate(25deg);
+      animation: gleam 5s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes gleam {
+      0%, 55% { left: -70%; }
+      85%, 100% { left: 150%; }
+    }
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 38px #FFD70040;
+    }
+    .button.secondary {
+      color: var(--cream);
+      background: #FFFFFF06;
+      box-shadow: none;
+    }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    /* ==================== CANVAS & NHẠC ==================== */
+    #dust, #confetti {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    #dust { z-index: -1; }
+    #confetti { z-index: 100; }
+
+    .music {
+      position: fixed;
+      right: 18px;
+      bottom: max(18px, env(safe-area-inset-bottom));
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 12px 17px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: #350610EB;
+      color: var(--cream);
+      font-size: 11px;
+      box-shadow: 0 8px 24px #0004;
+    }
+    .bars { display: flex; align-items: center; gap: 3px; height: 18px; }
+    .bars i { width: 2px; height: 5px; background: var(--gold); }
+    .music[aria-pressed="true"] .bars i { animation: equalizer .8s infinite alternate; }
+    .bars i:nth-child(2) { animation-delay: -.3s !important; }
+    .bars i:nth-child(3) { animation-delay: -.6s !important; }
+    @keyframes equalizer { to { height: 17px; } }
+
+    /* ==================== HERO ==================== */
+    .hero {
+      padding: 28px 0 25px;
+      perspective: 1400px;
+    }
+    .invitation {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      padding: 40px clamp(22px, 5vw, 70px) 30px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform .18s ease-out;
+    }
+    .invitation::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border: 1px solid #F3E5AB18;
+      border-radius: 18px;
+      pointer-events: none;
+    }
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #F3E5AB25;
+    }
+    .brand-lockup { display: flex; align-items: center; gap: 10px; text-align: left; }
+    .brand-name { font-size: 11px; font-weight: 800; letter-spacing: .09em; }
+    .brand-name small { display: block; font-size: 8px; font-weight: 500; opacity: .75; }
+    .edition { font-size: 9px; letter-spacing: .15em; color: var(--cream); }
+    .script {
+      margin: 30px 0 0;
+      font: 400 clamp(65px, 12vw, 105px)/1.25 var(--script);
+      color: var(--cream);
+      text-shadow: 0 5px 30px #FFD70030;
+    }
+    .cap {
+      width: 105px;
+      margin: 0 auto 16px;
+      filter: drop-shadow(0 10px 15px #FFA50035);
+      animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float { 50% { transform: translateY(-7px); } }
+    .ceremony {
+      margin-bottom: 8px;
+      font: 600 clamp(24px, 5vw, 43px)/1.3 var(--serif);
+      letter-spacing: .08em;
+    }
+    .english {
+      margin-bottom: 24px;
+      color: var(--cream);
+      font-size: 10px;
+      letter-spacing: .3em;
+    }
+    .ornament { display: flex; align-items: center; gap: 16px; max-width: 250px; margin: 20px auto; color: var(--gold); }
+    .ornament::before, .ornament::after {
+      content: ""; height: 1px; flex: 1;
+      background: linear-gradient(90deg, transparent, var(--cream));
+    }
+    .ornament::after { transform: rotate(180deg); }
+    .guest-invitation {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+    .guest-label {
+      margin: 0 0 8px;
+      color: rgba(255, 248, 232, .72);
+      font-family: var(--serif);
+      font-size: clamp(13px, 1.6vw, 15px);
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: .035em;
+    }
+    #guestName {
+      display: block;
+      max-width: 90%;
+      margin: 0 auto 14px;
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: clamp(27px, 4.5vw, 42px);
+      font-weight: 700;
+      line-height: 1.28;
+      letter-spacing: .015em;
+      overflow-wrap: break-word;
+      text-shadow: 0 2px 12px rgba(255, 215, 0, .22), 0 0 28px rgba(243, 229, 171, .1);
+    }
+    .guest-note {
+      max-width: 650px;
+      margin: 0 auto;
+      color: rgba(255, 248, 232, .76);
+      font-family: var(--serif);
+      font-size: clamp(13px, 1.65vw, 15px);
+      font-style: italic;
+      font-weight: 500;
+      line-height: 1.75;
+      letter-spacing: .01em;
+    }
+    .name {
+      margin: 18px 0 7px;
+      font: 700 clamp(29px, 6.1vw, 56px)/1.2 var(--serif);
+      letter-spacing: .02em;
+    }
+    .student { font-size: 10px; letter-spacing: .16em; color: var(--cream); }
+    .major { color: var(--muted); font-size: 12px; }
+    .hero-date {
+      display: inline-flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 16px 0 25px;
+      padding: 12px 22px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 12px;
+      color: var(--cream);
+    }
+    .scroll { display: block; width: fit-content; margin: 22px auto 0; text-decoration: none; color: var(--muted); font-size: 10px; letter-spacing: .13em; }
+    .scroll span { display: block; color: var(--gold); font-size: 20px; }
+
+    /* ==================== ĐẾM NGƯỢC ==================== */
+    .count-panel { padding: 38px 25px; text-align: center; }
+    .clock { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: 650px; margin: 26px auto; }
+    .clock-cell {
+      padding: 20px 5px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: linear-gradient(#FFF1, #FFF0);
+      box-shadow: inset 0 1px #FFE7A130;
+    }
+    .clock-cell strong {
+      display: block;
+      font: 600 clamp(29px, 6vw, 52px)/1.2 var(--serif);
+      font-variant-numeric: tabular-nums;
+      color: var(--cream);
+    }
+    .clock-cell span { font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
+    .status { margin: 0; font-size: 12px; color: var(--muted); }
+
+    /* ==================== LỊCH TRÌNH ==================== */
+    .timeline { position: relative; max-width: 790px; margin: 35px auto 0; padding: 0; list-style: none; }
+    .timeline::before {
+      content: ""; position: absolute; left: 135px; top: 22px; bottom: 35px; width: 1px;
+      background: linear-gradient(var(--cream), var(--orange), #FFD70030);
+      box-shadow: 0 0 12px #FFD70070;
+    }
+    .timeline li { position: relative; display: grid; grid-template-columns: 112px 1fr; gap: 47px; margin-bottom: 13px; }
+    .timeline li::before {
+      content: ""; position: absolute; top: 23px; left: 131px; width: 9px; height: 9px;
+      border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px #FFD70015, 0 0 12px #FFD70070;
+    }
+    .timeline time { padding-top: 17px; font-size: 11px; color: var(--cream); font-weight: 700; text-align: right; white-space: nowrap; }
+    .timeline p {
+      margin: 0; padding: 15px 20px; border: 1px solid #F3E5AB20;
+      border-radius: 12px; background: #FFFFFF06; font-size: 13px;
+      transition: transform .25s, background .25s, border-color .25s;
+    }
+    .timeline li:hover p { transform: translateX(6px); background: #FFD7000C; border-color: #FFD70080; }
+    .timeline .highlight p { border-color: #FFD70050; background: #FFD7000B; color: var(--cream); }
+
+    /* ==================== ĐỊA ĐIỂM & LỜI NGỎ ==================== */
+    .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; }
+    .panel { padding: clamp(25px, 4vw, 42px); }
+    .pin {
+      display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 24px;
+      border: 1px solid var(--border); border-radius: 16px; color: var(--gold); background: #FFD7000B;
+    }
+    .venue { font: 600 30px/1.35 var(--serif); }
+    .floor { color: var(--cream); font-size: 13px; font-weight: 700; }
+    address { margin: 15px 0 25px; color: var(--muted); font-size: 13px; font-style: normal; }
+    .date-card { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .date-number { font: 600 110px/1 var(--serif); }
+    .date-month { margin: 15px 0 7px; font-size: 13px; letter-spacing: .2em; }
+    .date-time { border-top: 1px solid var(--border); padding-top: 20px; margin-top: 20px; width: 100%; color: var(--cream); }
+    .notes { padding: 0; margin: 26px 0 0; list-style: none; }
+    .notes li { display: flex; gap: 12px; margin-bottom: 18px; font-size: 13px; color: var(--muted); }
+    .notes b { color: var(--text); }
+    .notes span { color: var(--gold); }
+    .letter { background: linear-gradient(135deg, #FFD70010, #FFFFFF04); }
+    .letter p:not(.eyebrow):not(.signature) { color: var(--muted); font-size: 14px; line-height: 1.95; }
+    .signature { font: 40px/1.4 var(--script); text-align: right; color: var(--cream); margin-bottom: 0; }
+    .closing { padding: 50px 25px; text-align: center; }
+    .closing .script { margin-top: 0; font-size: clamp(46px, 8vw, 72px); }
+    footer { padding: 25px 25px 95px; text-align: center; font-size: 9px; letter-spacing: .15em; color: var(--muted); }
+
+    /* ==================== MODAL ==================== */
+    .modal {
+      position: fixed; inset: 0; z-index: 50; display: grid; place-items: center;
+      padding: 20px; overflow-y: auto; background: #160208DB;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    }
+    .dialog {
+      position: relative; width: min(490px, 100%); padding: 45px 28px;
+      text-align: center; background-color: #500D18;
+    }
+    .close {
+      position: absolute; right: 12px; top: 12px; width: 42px; height: 42px;
+      border: 1px solid var(--border); border-radius: 50%; background: transparent;
+      color: var(--cream); font-size: 22px;
+    }
+    .seal { color: var(--gold); font-size: 48px; margin-bottom: 12px; }
+    .dialog .heading { font-size: 32px; }
+    .dialog p { font-size: 14px; color: var(--muted); }
+
+    /* ==================== ĐIỆN THOẠI & GIẢM CHUYỂN ĐỘNG ==================== */
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 24px); }
+      .section { padding: 40px 0; }
+      .hero { padding-top: 12px; }
+      .invitation { padding-top: 26px; }
+      .grid { grid-template-columns: 1fr; }
+      .date-card { min-height: 300px; }
+      .clock { gap: 7px; }
+      .count-panel { padding: 30px 15px; }
+      .timeline::before { left: 5px; top: 8px; }
+      .timeline li { display: block; padding-left: 27px; margin-bottom: 20px; }
+      .timeline li::before { left: 1px; top: 8px; }
+      .timeline time { display: block; padding: 0 0 7px; text-align: left; }
+      .timeline p { padding: 14px; }
+      .edition { display: none; }
+      .brand { justify-content: center; }
+      .english { font-size: 8px; letter-spacing: .18em; }
+      .hero-date { gap: 6px 14px; }
+    }
+    @media (max-width: 380px) {
+      .button { width: 100%; }
+      .clock-cell span { font-size: 8px; letter-spacing: .08em; }
+      .name { font-size: 28px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ==================== HIỆU ỨNG NỀN ==================== -->
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <canvas id="confetti" aria-hidden="true" hidden></canvas>
+
+  <button class="music" id="musicButton" type="button" aria-pressed="false">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span id="musicLabel">Bật nhạc</span>
+  </button>
+
+  <main id="main">
+    <!-- ==================== THIỆP CHÍNH ==================== -->
+    <section class="hero wrap">
+      <article class="invitation glass" id="invitation">
+        <header class="brand">
+          <div class="brand-lockup">
+            <!-- Huy hiệu chữ FPT cách điệu bằng SVG nội tuyến -->
+            <svg width="77" height="32" viewBox="0 0 90 36" role="img" aria-label="FPT">
+              <path fill="#1478BE" d="M6 2h24l-6 32H0z"/>
+              <path fill="#F26F21" d="M36 2h24l-6 32H30z"/>
+              <path fill="#4DAE45" d="M66 2h24l-6 32H60z"/>
+              <g fill="white" font-family="Arial,sans-serif" font-size="23" font-weight="bold" font-style="italic">
+                <text x="7" y="26">F</text>
+                <text x="36" y="26">P</text>
+                <text x="66" y="26">T</text>
+              </g>
+            </svg>
+            <div class="brand-name">FPT UNIVERSITY<small>FPT Education</small></div>
+          </div>
+          <span class="edition">THE CLASS OF 2026</span>
+        </header>
+
+        <h1 class="script">Thư Mời</h1>
+
+        <svg class="cap" viewBox="0 0 120 85" aria-hidden="true">
+          <defs>
+            <linearGradient id="capGold" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#FFF6C6"/>
+              <stop offset=".5" stop-color="#FFD700"/>
+              <stop offset="1" stop-color="#C47A14"/>
+            </linearGradient>
+          </defs>
+          <path d="M28 42v20q32 24 64 0V42L60 56Z" fill="#C38B25"/>
+          <path d="M28 48v14q32 20 64 0V48L60 62Z" fill="url(#capGold)"/>
+          <path d="M5 29 60 5l55 24-55 25Z" fill="url(#capGold)" stroke="#FFF1AB"/>
+          <path d="m60 29 46 5v28" fill="none" stroke="#FFF0A9" stroke-width="2"/>
+          <path d="m106 59-4 14h8Z" fill="#FFD700"/>
+          <ellipse cx="60" cy="29" rx="4" ry="2" fill="#FFF8CF"/>
+        </svg>
+
+        <h2 class="ceremony gold">LỄ TỐT NGHIỆP</h2>
+        <p class="english">GRADUATION CEREMONY · 2026</p>
+        <div class="ornament" aria-hidden="true">✦</div>
+
+        <div class="guest-invitation">
+          <p class="guest-label">Trân trọng kính mời</p>
+          <strong id="guestName">Chị Trần Thu Hà</strong>
+          <p class="guest-note">Đến dự lễ tốt nghiệp của em với vai trò một người truyền cảm hứng cho em</p>
+        </div>
+        <h2 class="name gold">HOÀNG HẢI SƠN</h2>
+        <p class="major">Ngành Digital Marketing · Đại học FPT</p>
+
+        <div class="hero-date">
+          <strong>07:00 — 11:00</strong>
+          <span>Thứ Ba · 15.09.2026</span>
+        </div>
+
+        <div class="actions">
+          <a class="button" href="#rsvp">✦ Xác nhận tham dự</a>
+          <a class="button secondary" href="#location">Thông tin địa điểm ↗</a>
+        </div>
+        <a class="scroll" href="#countdown"><span></span></a>
+      </article>
+    </section>
+
+    <!-- ==================== ĐỒNG HỒ ĐẾM NGƯỢC ==================== -->
+    <section class="section wrap" id="countdown">
+      <div class="count-panel glass">
+        <p class="eyebrow">Until our special moment</p>
+        <h2 class="heading">Chờ đón khoảnh khắc tự hào</h2>
+        <div class="clock" role="timer" aria-label="Đếm ngược tới lễ tốt nghiệp">
+          <div class="clock-cell"><strong id="days">00</strong><span>Ngày</span></div>
+          <div class="clock-cell"><strong id="hours">00</strong><span>Giờ</span></div>
+          <div class="clock-cell"><strong id="minutes">00</strong><span>Phút</span></div>
+          <div class="clock-cell"><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+        <p class="status" id="countStatus" role="status">
+          07:00 · 15 tháng 09 năm 2026 · Giờ Việt Nam
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== LỊCH TRÌNH ĐẦY ĐỦ ==================== -->
+    <section class="section wrap" id="agenda">
+      <div class="center">
+        <p class="eyebrow">The ceremony</p>
+        <h2 class="heading">Hành trình của buổi lễ</h2>
+        <p class="lead">Từ những cái ôm hội ngộ đến giây phút tung mũ — cùng nhau lưu giữ một ngày thật đáng nhớ.</p>
+      </div>
+
+      <ol class="timeline">
+        <li><time>07:00 – 08:00</time><p>Đón khách, ổn định tổ chức &amp; chụp hình check-in</p></li>
+        <li><time>08:00 – 08:10</time><p>Nghi thức thầy cô tiến vào hội trường trang nghiêm</p></li>
+        <li><time>08:10 – 08:20</time><p>Tiết mục văn nghệ mở màn</p></li>
+        <li><time>08:20 – 08:25</time><p>Tuyên bố lý do, giới thiệu đại biểu &amp; khách quý</p></li>
+        <li><time>08:25 – 08:30</time><p>Đại diện Ban giám hiệu Trường Đại học FPT phát biểu</p></li>
+        <li><time>08:30 – 08:35</time><p>Tri ân Doanh nghiệp đối tác</p></li>
+        <li><time>08:35 – 08:45</time><p>Khen thưởng Sinh viên học tập &amp; phong trào xuất sắc</p></li>
+        <li><time>08:45 – 08:55</time><p>Khen thưởng Thủ khoa &amp; Đại diện sinh viên tốt nghiệp phát biểu</p></li>
+        <li><time>08:55 – 09:00</time><p>Trình chiếu Video hành trình thanh xuân sinh viên FPT</p></li>
+        <li><time>09:00 – 09:05</time><p>Nghi thức tri ân Thầy Cô và Cha Mẹ</p></li>
+        <li><time>09:05 – 09:10</time><p>Hòa ca “FPT - Dòng sông lời thề”</p></li>
+        <li class="highlight"><time>09:10 – 10:40</time><p>Nghi lễ xướng tên và trao Bằng Tốt Nghiệp danh giá</p></li>
+        <li class="highlight"><time>10:40 – 11:00</time><p>Nghi thức tung mũ tốt nghiệp &amp; chụp ảnh lưu niệm</p></li>
+      </ol>
+    </section>
+
+    <!-- ==================== ĐỊA ĐIỂM ==================== -->
+<section class="section wrap" id="location">
+  <div class="location-layout">
+
+    <article class="panel glass location-card">
+
+      <!-- Icon vị trí -->
+      <p class="eyebrow"></p>
+
+<div class="venue-row">
+
+  <div class="pin">
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.6"
+      aria-hidden="true"
+    >
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </svg>
+  </div>
+
+  <h2 class="venue">
+    Trung tâm Hội nghị Quốc gia
+  </h2>
+
+</div>
+
+      <!-- Đường trang trí -->
+      <div class="location-divider" aria-hidden="true">
+        <span></span>
+        <b>✦</b>
+        <span></span>
+      </div>
+
+      <p class="floor">
+        Hội trường MMH · Tầng 3 · Cổng số 1
+      </p>
+
+      <address>
+        Đại lộ Thăng Long, Nam Từ Liêm, Hà Nội
+      </address>
+
+      <a
+        class="button"
+        href="https://www.google.com/maps/search/?api=1&amp;query=Trung%20tam%20Hoi%20nghi%20Quoc%20gia%20Ha%20Noi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chỉ đường qua Google Maps ↗
+      </a>
+
+    </article>
+
+  </div>
+</section>
+
+   <!-- ==================== LỜI CẢM ƠN ==================== -->
+<section class="section wrap" id="gratitude">
+  <div class="gratitude-layout">
+
+    <article class="panel glass letter gratitude-card">
+
+      <!-- Biểu tượng trang trí phía trên -->
+      <div class="gratitude-ornament" aria-hidden="true">
+        <span></span>
+        <b>✦</b>
+        <span></span>
+      </div>
+
+      <p class="eyebrow">With love &amp; gratitude</p>
+
+      <h2 class="heading">Một lời biết ơn</h2>
+
+      <div class="gratitude-content">
+        <p>
+          Bốn năm đại học là hành trình của những bài học, những lần cố gắng
+          và cả những lúc chông chênh. May mắn thay, Sơn luôn có gia đình,
+          Thầy Cô và những người bạn thân quý đồng hành.
+        </p>
+
+        <p>
+          Cảm ơn Cha Mẹ vì tình yêu thương và niềm tin vô điều kiện.
+          Cảm ơn Thầy Cô vì sự tận tâm dìu dắt. Cảm ơn bạn bè vì đã cùng
+          nhau viết nên những năm tháng thanh xuân thật đẹp.
+        </p>
+
+        <p>
+          Tấm bằng hôm nay mang theo sự động viên của tất cả mọi người.
+          Sơn rất mong được cùng mọi người chia sẻ niềm tự hào này
+          trong ngày tốt nghiệp.
+        </p>
+      </div>
+
+      <div class="signature-area">
+        <span class="signature-label">Trân trọng,</span>
+        <p class="signature">Hoàng Hải Sơn</p>
+        <span class="signature-role">
+          Tân Cử nhân · FPT University
+        </span>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+    <!-- ==================== XÁC NHẬN THAM DỰ ==================== -->
+    <section class="section wrap" id="rsvp">
+      <div class="closing glass">
+        <p class="eyebrow">Your presence means everything</p>
+        <h2 class="script">Hẹn gặp trong ngày tự hào!</h2>
+        <p class="lead">Sự hiện diện của bạn sẽ khiến khoảnh khắc này thêm trọn vẹn.</p>
+        <button class="button" id="rsvpButton" type="button">✦ Xác nhận tham dự</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>HOÀNG HẢI SƠN · FPT UNIVERSITY · CLASS OF 2026</footer>
+
+  <!-- ==================== MODAL CẢM ƠN ==================== -->
+  <div class="modal" id="modal" hidden>
+    <section class="dialog glass" role="dialog" aria-modal="true"
+             aria-labelledby="modalTitle" aria-describedby="modalDescription">
+      <button class="close" id="closeModal" type="button" aria-label="Đóng lời cảm ơn">×</button>
+      <div class="seal" aria-hidden="true">✦</div>
+      <h2 class="heading" id="modalTitle">Cảm ơn bạn thật nhiều!</h2>
+      <p id="modalDescription">Sơn rất vui khi bạn cùng chia sẻ ngày đặc biệt này. Hẹn gặp bạn lúc 07:00 ngày 15.09.2026 tại Hội trường MMH, Tầng 3 nhé!</p>
+      <p>Bạn nhớ nhắn trực tiếp cho Sơn để sắp xếp vé mời và xác nhận chỗ tham dự.</p>
+      <button class="button" id="doneModal" type="button">Hẹn gặp Sơn! ✦</button>
+    </section>
+  </div>
+
+  <script>
+    "use strict";
+
+    /* ==================== CẤU HÌNH & TIỆN ÍCH ==================== */
+    const $ = id => document.getElementById(id);
+    const motionQuery = matchMedia("(prefers-reduced-motion: reduce)");
+    const eventStart = Date.parse("2026-09-15T07:00:00+07:00");
+    const eventEnd = Date.parse("2026-09-15T11:00:00+07:00");
+
+    // Cá nhân hóa: index.html?guest=Nguyễn%20Văn%20An
+    const guest = new URLSearchParams(location.search).get("guest");
+    if (guest && guest.trim()) {
+      $("guestName").textContent = guest.trim().slice(0, 100);
+    }
+
+    /* ==================== COUNTDOWN THEO GIỜ VIỆT NAM ==================== */
+    function updateClock() {
+      const now = Date.now();
+      const remaining = Math.max(0, Math.floor((eventStart - now) / 1000));
+      const values = [
+        Math.floor(remaining / 86400),
+        Math.floor(remaining / 3600) % 24,
+        Math.floor(remaining / 60) % 60,
+        remaining % 60
+      ];
+
+      ["days", "hours", "minutes", "seconds"].forEach((id, index) => {
+        const value = String(values[index]).padStart(2, "0");
+        if ($(id).textContent !== value) $(id).textContent = value;
+      });
+
+      const message = now < eventStart
+        ? "07:00 · 15 tháng 09 năm 2026 · Giờ Việt Nam"
+        : now < eventEnd
+          ? "Buổi lễ đang diễn ra. Chào mừng bạn đến chung vui!"
+          : "Một cột mốc đáng nhớ. Cảm ơn bạn đã đồng hành cùng Sơn.";
+
+      if ($("countStatus").textContent !== message) {
+        $("countStatus").textContent = message;
+      }
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    /* ==================== THIỆP NGHIÊNG 3D ==================== */
+    const card = $("invitation");
+    const finePointer = matchMedia("(hover: hover) and (pointer: fine)");
+
+    card.addEventListener("pointermove", event => {
+      if (!finePointer.matches || motionQuery.matches) return;
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - .5;
+      const y = (event.clientY - rect.top) / rect.height - .5;
+      card.style.transform =
+        `rotateX(${-y * 4}deg) rotateY(${x * 5}deg)`;
+    });
+    card.addEventListener("pointerleave", () => {
+      card.style.transform = "";
+    });
+
+    /* ==================== GOLDEN STARDUST ==================== */
+    const dust = $("dust");
+    const dustContext = dust.getContext("2d");
+    let width = innerWidth;
+    let height = innerHeight;
+    let stars = [];
+    let dustFrame = 0;
+    let previousDustTime = 0;
+
+    function sizeCanvas(canvas, context) {
+      const ratio = Math.min(devicePixelRatio || 1, 2);
+      canvas.width = Math.round(innerWidth * ratio);
+      canvas.height = Math.round(innerHeight * ratio);
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function resizeDust() {
+      if (!dustContext) return;
+      width = innerWidth;
+      height = innerHeight;
+      sizeCanvas(dust, dustContext);
+      stars = Array.from(
+        { length: Math.min(70, Math.max(25, Math.floor(width / 18))) },
+        () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 1.5 + .4,
+          speed: Math.random() * 9 + 3,
+          phase: Math.random() * Math.PI * 2
+        })
+      );
+      restartDust();
+    }
+
+    function drawDust(timestamp) {
+      dustFrame = 0;
+      if (!dustContext || document.hidden) return;
+
+      const dt = previousDustTime
+        ? Math.min((timestamp - previousDustTime) / 1000, .05)
+        : 0;
+      previousDustTime = timestamp;
+      dustContext.clearRect(0, 0, width, height);
+
+      stars.forEach(star => {
+        if (!motionQuery.matches) {
+          star.y -= star.speed * dt;
+          star.phase += dt;
+          if (star.y < -5) star.y = height + 5;
+        }
+        dustContext.beginPath();
+        dustContext.fillStyle =
+          `rgba(255,224,132,${.4 + Math.sin(star.phase) * .25})`;
+        dustContext.shadowColor = "#FFD700";
+        dustContext.shadowBlur = 8;
+        dustContext.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        dustContext.fill();
+      });
+
+      if (!motionQuery.matches) {
+        dustFrame = requestAnimationFrame(drawDust);
+      }
+    }
+
+    function restartDust() {
+      cancelAnimationFrame(dustFrame);
+      previousDustTime = 0;
+      if (!document.hidden && dustContext) {
+        dustFrame = requestAnimationFrame(drawDust);
+      }
+    }
+
+    resizeDust();
+    addEventListener("resize", resizeDust, { passive: true });
+    document.addEventListener("visibilitychange", restartDust);
+    if (motionQuery.addEventListener) {
+      motionQuery.addEventListener("change", () => {
+        card.style.transform = "";
+        restartDust();
+      });
+    }
+
+    /* ==================== CONFETTI KHÔNG DÙNG THƯ VIỆN ==================== */
+    const confettiCanvas = $("confetti");
+    const confettiContext = confettiCanvas.getContext("2d");
+    let confettiFrame = 0;
+
+    function celebrate() {
+      cancelAnimationFrame(confettiFrame);
+      if (!confettiContext || motionQuery.matches) {
+        confettiCanvas.hidden = true;
+        return;
+      }
+
+      sizeCanvas(confettiCanvas, confettiContext);
+      confettiCanvas.hidden = false;
+      const colors = ["#FFD700", "#F26F21", "#F3E5AB", "#FFFFFF", "#FFA500"];
+      const particles = Array.from({ length: innerWidth < 600 ? 85 : 140 }, () => ({
+        x: innerWidth / 2,
+        y: innerHeight * .48,
+        vx: (Math.random() - .5) * 650,
+        vy: -Math.random() * 450 - 80,
+        size: Math.random() * 7 + 4,
+        angle: Math.random() * Math.PI,
+        spin: (Math.random() - .5) * 8,
+        color: colors[Math.floor(Math.random() * colors.length)]
+      }));
+
+      let start = 0;
+      let last = 0;
+      function frame(time) {
+        if (!start) start = time;
+        const dt = last ? Math.min((time - last) / 1000, .04) : 0;
+        last = time;
+        const elapsed = (time - start) / 1000;
+        confettiContext.clearRect(0, 0, innerWidth, innerHeight);
+
+        particles.forEach(p => {
+          p.x += p.vx * dt;
+          p.y += p.vy * dt;
+          p.vy += 240 * dt;
+          p.angle += p.spin * dt;
+
+          confettiContext.save();
+          confettiContext.globalAlpha = Math.max(0, 1 - elapsed / 3.5);
+          confettiContext.translate(p.x, p.y);
+          confettiContext.rotate(p.angle);
+          confettiContext.fillStyle = p.color;
+          confettiContext.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * .6);
+          confettiContext.restore();
+        });
+
+        if (elapsed < 3.5 && !document.hidden) {
+          confettiFrame = requestAnimationFrame(frame);
+        } else {
+          confettiCanvas.hidden = true;
+        }
+      }
+      confettiFrame = requestAnimationFrame(frame);
+    }
+
+    /* ==================== MODAL & ĐIỀU KHIỂN BÀN PHÍM ==================== */
+    const modal = $("modal");
+    let returnFocus = null;
+    let previousOverflow = "";
+
+    function openModal() {
+      returnFocus = document.activeElement;
+      previousOverflow = document.body.style.overflow;
+      modal.hidden = false;
+      document.body.style.overflow = "hidden";
+      $("closeModal").focus();
+      celebrate();
+    }
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.style.overflow = previousOverflow;
+      if (returnFocus) returnFocus.focus();
+    }
+
+    $("rsvpButton").addEventListener("click", openModal);
+    $("closeModal").addEventListener("click", closeModal);
+    $("doneModal").addEventListener("click", closeModal);
+    modal.addEventListener("click", event => {
+      if (event.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (modal.hidden) return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeModal();
+      }
+      if (event.key === "Tab") {
+        const controls = [...modal.querySelectorAll("button, a[href]")];
+        const first = controls[0];
+        const last = controls[controls.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    /* ==================== NHẠC AMBIENT TẠO BẰNG WEB AUDIO ==================== */
+    // Chỉ phát sau thao tác của khách; không cần tải file nhạc.
+    let audio = null;
+    let master = null;
+    let musicTimer = null;
+    let musicOn = false;
+    let busy = false;
+    let chordIndex = 0;
+
+    const chords = [
+      [261.63, 329.63, 392.00],
+      [220.00, 261.63, 329.63],
+      [174.61, 220.00, 261.63],
+      [196.00, 246.94, 293.66]
+    ];
+
+    function playChord() {
+      if (!audio || audio.state !== "running") return;
+      const chord = chords[chordIndex++ % chords.length];
+      chord.forEach((frequency, index) => {
+        const oscillator = audio.createOscillator();
+        const envelope = audio.createGain();
+        const start = audio.currentTime + index * .34;
+
+        oscillator.type = "sine";
+        oscillator.frequency.value = frequency;
+        envelope.gain.setValueAtTime(0, start);
+        envelope.gain.linearRampToValueAtTime(.12, start + .35);
+        envelope.gain.exponentialRampToValueAtTime(.0001, start + 4.5);
+
+        oscillator.connect(envelope);
+        envelope.connect(master);
+        oscillator.start(start);
+        oscillator.stop(start + 4.6);
+        oscillator.onended = () => {
+          oscillator.disconnect();
+          envelope.disconnect();
+        };
+      });
+    }
+
+    $("musicButton").addEventListener("click", async () => {
+      if (busy) return;
+      busy = true;
+      try {
+        const AudioEngine = window.AudioContext || window.webkitAudioContext;
+        if (!AudioEngine) {
+          $("musicLabel").textContent = "Không hỗ trợ âm thanh";
+          return;
+        }
+        if (!audio) {
+          audio = new AudioEngine();
+          master = audio.createGain();
+          master.gain.value = 0;
+          master.connect(audio.destination);
+        }
+
+        if (!musicOn) {
+          await audio.resume();
+          musicOn = true;
+          master.gain.cancelScheduledValues(audio.currentTime);
+          master.gain.setValueAtTime(0, audio.currentTime);
+          master.gain.linearRampToValueAtTime(.35, audio.currentTime + .4);
+          playChord();
+          musicTimer = setInterval(playChord, 3700);
+        } else {
+          musicOn = false;
+          clearInterval(musicTimer);
+          master.gain.cancelScheduledValues(audio.currentTime);
+          master.gain.setTargetAtTime(0, audio.currentTime, .05);
+          await new Promise(resolve => setTimeout(resolve, 220));
+          await audio.suspend();
+        }
+
+        $("musicButton").setAttribute("aria-pressed", String(musicOn));
+        $("musicLabel").textContent = musicOn ? "Tắt nhạc" : "Bật nhạc";
+      } catch (error) {
+        clearInterval(musicTimer);
+        musicOn = false;
+        if (master) master.gain.value = 0;
+        $("musicButton").setAttribute("aria-pressed", "false");
+        $("musicLabel").textContent = "Thử bật nhạc lại";
+      } finally {
+        busy = false;
+      }
+    });
+  </script>
+</body>
+</html>
