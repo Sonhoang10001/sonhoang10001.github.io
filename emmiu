@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITAN PC 2026 – Cỗ Máy Tối Ưu CapCut, Photoshop Dành Riêng Cho Yến Trang ✨</title>
+  
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyberDark: '#0B0F17',
+            cyberCard: '#111726',
+            neonCyan: '#00F2FE',
+            neonPurple: '#4FACFE',
+            pastelPink: '#F472B6',
+            pastelRose: '#FDA4AF',
+            accentAmber: '#F59E0B',
+            accentEmerald: '#10B981',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Space Grotesk', 'Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 25px -5px rgba(0, 242, 254, 0.35)',
+            'glow-purple': '0 0 25px -5px rgba(79, 172, 254, 0.35)',
+            'glow-pink': '0 0 25px -5px rgba(244, 114, 182, 0.35)',
+            'glow-emerald': '0 0 25px -5px rgba(16, 185, 129, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0F17;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F2FE;
+    }
+
+    .grid-bg {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #00F2FE 0%, #4FACFE 50%, #d946ef 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-panel {
+      background: rgba(17, 23, 38, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 242, 254, 0.45);
+      box-shadow: 0 12px 30px -10px rgba(0, 242, 254, 0.25);
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 14px rgba(0, 242, 254, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 242, 254, 0);
+      }
+    }
+    .recommended-glow {
+      border-color: #00F2FE !important;
+      animation: pulse-ring 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-cyberDark text-slate-100 font-sans min-h-screen selection:bg-neonCyan selection:text-black grid-bg relative overflow-x-hidden">
+
+  <!-- HEADER NAVIGATION -->
+  <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-cyberDark/85 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neonCyan via-neonPurple to-pastelPink flex items-center justify-center p-0.5 shadow-glow-cyan">
+          <div class="w-full h-full bg-cyberDark rounded-[10px] flex items-center justify-center text-lg">
+            ✨
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-bold text-lg tracking-wider text-white flex items-center gap-2">
+            TITAN <span class="gradient-text font-black">CREATOR</span> 🌸
+          </span>
+          <span class="text-xs text-slate-400 block tracking-tight">Studio Hardware &amp; Beginner Friendly 2026 🎀</span>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-3">
+        <a href="#analogy-section" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/60 hover:bg-slate-800 transition-all">
+          <span>💖</span> Ví Dụ Dễ Hiểu
+        </a>
+        <a href="#quiz-section" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/60 hover:bg-slate-800 transition-all">
+          <span>🧭</span> Chọn Theo Nhu Cầu
+        </a>
+        <button id="btn-copy-config" class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-neonCyan to-neonPurple text-slate-950 font-bold hover:brightness-110 shadow-glow-cyan transition-all">
+          <span>📋</span> <span class="hidden sm:inline">Sao Chép</span> Báo Giá
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-16">
+
+    <!-- HERO SECTION -->
+    <section class="glass-panel rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl border border-slate-700/60">
+      <div class="absolute -top-32 -right-32 w-96 h-96 bg-neonCyan/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-pastelPink/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+        
+        <!-- Left: Copywriting & Value Highlights -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 border border-neonCyan/30 text-xs font-medium text-neonCyan tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+            🎯 Dành Riêng Cho Creator Xinh Đẹp ✨
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-black leading-tight text-white tracking-tight">
+            NGUỒN TRUST ME BRO BUILD 🚀<br/>
+            <span class="gradient-text">Dành Riêng Cho Em Miu 🎀</span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Dù bạn chưa biết gì về linh kiện máy tính, cỗ máy này được thiết kế để bạn <strong class="text-white">chỉ cần bật máy lên và sáng tạo 🎬</strong>. Né trọn vẹn bão giá RAM &amp; Card màn hình, timeline dựng video CapCut tua 4K mượt mà, render ảnh và chạy tính năng AI tự động không lo văng app! 🥳
+          </p>
+
+          <!-- 3 Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
+              <div class="text-2xl mb-2">⚡</div>
+              <h4 class="text-xs font-bold text-slate-200">Intel Quick Sync</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Timeline tua mượt như bơ, không lo khựng giật 🎞️</p>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
+              <div class="text-2xl mb-2">🪄</div>
+              <h4 class="text-xs font-bold text-slate-200">VRAM &amp; AI Studio</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Tự động xóa nền, bóp eo, tracking AI siêu tốc 💅</p>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
+              <div class="text-2xl mb-2">🛡️</div>
+              <h4 class="text-xs font-bold text-slate-200">Nồi Đồng Cối Đá</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Nguồn &amp; tản êm ru &lt; 32dB, bền bỉ 4-5 năm 🤫</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Khung Hình Ảnh Góc Setup & Tổng Chi Phí Chuẩn Xác -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="w-full relative rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl group bg-slate-950">
+            
+            <!-- 1 Hình Ảnh Setup Tinh Tế -->
+            <div class="aspect-[4/3] w-full overflow-hidden bg-slate-950">
+              <img 
+                id="hero-case-img"
+                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=80" 
+                alt="PC Setup View" 
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent pointer-events-none"></div>
+
+            <!-- Bảng Tổng Chi Phí Dự Toán Chuẩn Xác (23.350.000 VNĐ) -->
+            <div class="absolute bottom-3 left-3 right-3 p-4 sm:p-5 rounded-2xl bg-slate-950/90 backdrop-blur-md border border-slate-700/80 flex items-center justify-between shadow-xl">
+              <div>
+                <span class="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 block font-semibold mb-0.5">💰 TỔNG CHI PHÍ DỰ TOÁN</span>
+                <span id="live-total-price" class="text-2xl sm:text-3xl font-display font-extrabold text-white tracking-tight">23.350.000 VNĐ</span>
+              </div>
+              <div class="text-right">
+                <span id="selected-parts-count" class="text-xs sm:text-sm px-3 py-1.5 rounded-xl bg-neonCyan/15 text-neonCyan font-bold border border-neonCyan/30">📦 8 / 8 Món</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHẦN: GIẢI MÃ BẢN CHẤT LINH KIỆN - GÓC NHÌN ĐỜI THƯỜNG (DẠNG HÀNG NGANG CÓ EMOJI/STICKER) -->
+    <section id="analogy-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      
+      <!-- TIÊU ĐỀ KHU VỰC -->
+      <div class="text-center mb-12">
+        <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-4">
+          💡 HƯỚNG DẪN DỄ HIỂU DÀNH CHO CON GÁI &amp; NGƯỜI MỚI 🌸
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Bản Chất Từng Linh Kiện: <span class="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent">Góc Nhìn Thực Tế 🔍</span>
+        </h2>
+        <p class="text-slate-400 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
+          Đừng để những con số khô khan làm bạn đau đầu! Hãy hình dung chiếc máy tính như một căn phòng làm việc sáng tạo đầy đủ tiện nghi nhé 💖
+        </p>
+      </div>
+
+      <!-- DANH SÁCH LINH KIỆN DẠNG HÀNG NGANG -->
+      <div class="space-y-6">
+
+        <!-- 1. RAM: BÀN TRANG ĐIỂM -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-pink-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-pink-400">💄 Bộ Nhớ Tạm Thời</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">RAM ⚡</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-pink-950/60 border border-pink-500/30 text-pink-300 text-xs font-semibold">
+              🪞 Mặt Bàn Trang Điểm Rộng Rãi
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Đa nhiệm, giữ app không bị văng</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Hãy tưởng tượng <span class="text-pink-300 font-semibold">RAM chính là chiếc bàn trang điểm của bạn 🪞</span>. Nếu mặt bàn quá hẹp (chỉ 8GB hoặc 16GB), bạn vừa bày bộ cọ phấn, vừa để bảng mắt, son môi lại muốn đặt thêm gương và laptop thì mặt bàn sẽ <span class="text-rose-400 font-semibold">chật cứng, đồ đạc rơi vỡ lung tung 💥</span> — trên máy tính, điều đó tương đương với việc <span class="text-rose-400 font-semibold">máy bị khựng, đơ lag hoặc tự văng khỏi ứng dụng 😱</span>.
+            </p>
+            <p>
+              Khi nâng cấp lên <span class="text-emerald-400 font-semibold">32GB RAM ✨</span>, mặt bàn sẽ cực kỳ rộng rãi: bạn có thể thoải mái vừa mở Photoshop chỉnh ảnh nhiều layer, vừa mở CapCut dựng clip TikTok, vừa bật hàng chục tab trình duyệt nghe nhạc mà <span class="text-cyan-300 font-semibold">mọi thứ vẫn nằm ngăn nắp, chuyển đổi qua lại êm ái như bay 🦋</span>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. CPU: BỘ NÃO & TỔNG GIÁM ĐỐC -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-cyan-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">🧠 Bộ Xử Lý Trung Tâm</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">CPU 👑</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+              👔 Bộ Não &amp; Sếp Tổng Điều Hành
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Ra quyết định, phản hồi click chuột</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Thiếu bộ não thì máy tính hoàn toàn không thể khởi động hay làm việc được 🚫. Sếp tổng CPU càng thông minh và xử lý nhanh thì <span class="text-cyan-300 font-semibold">mỗi cú click chuột, mở thư mục hay dùng cọ vẽ trong Photoshop phản hồi tức thì ⚡</span>, không có chút độ trễ nào.
+            </p>
+            <p>
+              Đặc biệt ở dòng chip Intel có nhân đồ họa tích hợp, nó sở hữu tính năng <span class="text-amber-300 font-semibold">Intel Quick Sync 🎬</span> giống như một trợ lý chuyên nghiệp: hỗ trợ giải mã video trên CapCut để bạn <span class="text-emerald-400 font-semibold">kéo thanh thời gian tới lui mượt như lướt video ngắn trên điện thoại vậy 📱</span>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. VGA: CHUYÊN GIA LÀM ĐẸP & AI -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-purple-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-400">🎨 Bộ Xử Lý Đồ Họa</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">VGA / GPU 💎</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs font-semibold">
+              💅 Chuyên Viên Trang Điểm &amp; AI
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Làm đẹp, filter, xuất video siêu tốc</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Nếu CPU lo tính toán logic thì VGA chuyên lo về <span class="text-purple-300 font-semibold">nhan sắc hình ảnh và thẩm mỹ 💖</span>. Khi bạn cần <span class="text-purple-300 font-semibold">làm mịn da, xóa vật thể dư thừa, bóp dáng, tách nền hay gắn filter lấp lánh ✨</span>, chiếc card đồ họa sẽ gánh vác toàn bộ.
+            </p>
+            <p>
+              Sở hữu bộ nhớ đồ họa khủng <span class="text-amber-300 font-semibold">12GB VRAM 🚀</span> giúp bạn không bao giờ gặp sự cố tràn bộ nhớ khi nhồi quá nhiều hiệu ứng. Bộ giải mã <span class="text-emerald-400 font-semibold">NVENC</span> tích hợp sẵn sẽ giúp công đoạn <span class="text-emerald-400 font-semibold">xuất video thành phẩm nhanh gấp nhiều lần ⏱️</span> so với máy tính thông thường!
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. SSD: TỦ QUẦN ÁO ĐẦU GIƯỜNG -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-amber-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">📁 Ổ Cứng Lưu Trữ</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">Ổ Cứng SSD 🚀</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+              👗 Tủ Đồ Thông Minh Đầu Giường
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Mở máy 5s, load ảnh tức thì</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Ổ cứng SSD NVMe giống như <span class="text-amber-300 font-semibold">chiếc tủ quần áo thông minh đặt ngay đầu giường 👗</span>: sáng mở mắt ra là với tay lấy được bộ váy ưng ý chỉ trong vài giây. Máy tính trang bị SSD xịn sẽ <span class="text-emerald-400 font-semibold">bật lên sẵn sàng làm việc trong chưa đầy 7 giây ⏱️</span>, mở các file Photoshop nặng hàng trăm MB ngay lập tức.
+            </p>
+            <p>
+              Ngược lại, các loại ổ đĩa cứng cơ (HDD) cũ kỹ giống như chiếc nhà kho tuốt dưới tầng hầm: mỗi lần cần tìm một tấm ảnh kỷ niệm hay mở phần mềm, bạn phải <span class="text-rose-400 font-semibold">ngồi chờ đợi mòn mỏi vòng xoay đồng hồ ⏳😫</span>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. PSU: TRÁI TIM BƠM NĂNG LƯỢNG -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-rose-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-400">🔌 Bộ Nguồn Máy Tính</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">PSU (Nguồn) ❤️</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-rose-950/60 border border-rose-500/30 text-rose-300 text-xs font-semibold">
+              💓 Trái Tim Bơm Điện Đều Đặn
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Chống sập nguồn, bảo vệ máy</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Nguồn đóng vai trò như <span class="text-rose-300 font-semibold">trái tim khỏe mạnh không ngừng bơm máu đi nuôi các cơ quan ❤️</span>. Bộ nguồn chuẩn sẽ chuyển hóa điện lưới gia đình thành nguồn năng lượng tinh khiết, ổn định cung cấp cho từng linh kiện hoạt động nhịp nhàng.
+            </p>
+            <p>
+              Một bộ nguồn đạt chứng nhận an toàn giúp máy <span class="text-emerald-400 font-semibold">không bao giờ bị hiện tượng tắt ngóm đột ngột 🚫</span> khi bạn đang dựng dở một dự án video quan trọng mà chưa kịp bấm lưu (Ctrl + S) lại! 🙌
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. TẢN NHIỆT: ĐIỀU HÒA 18 ĐỘ -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-sky-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-400">❄️ Hệ Thống Làm Mát</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">Tản Nhiệt 🌬️</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-sky-950/60 border border-sky-500/30 text-sky-300 text-xs font-semibold">
+              ☃️ Điều Hòa 18 Độ Cho Căn Phòng
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Giữ máy mát rượi, quạt êm ru</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Khi làm việc nặng như render video 4K dài, CPU sẽ phải tính toán hết công suất và tỏa ra nhiệt lượng rất lớn 🔥. Tản nhiệt giống như <span class="text-sky-300 font-semibold">chiếc máy điều hòa bật liên tục ❄️</span>, giúp bộ não luôn trong trạng thái mát mẻ ở <span class="text-sky-300 font-semibold">mức dưới 65 độ C</span>.
+            </p>
+            <p>
+              Nhờ được làm mát tối ưu, máy tính sẽ <span class="text-emerald-400 font-semibold">vận hành cực kỳ tĩnh lặng trong đêm 🌙</span>, không phát ra tiếng quạt gầm rú gây nhức đầu khi bạn cần không gian tập trung.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. MAINBOARD: TRỤ SỞ VÀ HỆ THỐNG KẾT NỐI -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-emerald-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">🏢 Bo Mạch Chủ</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">Mainboard 🌐</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+              🌉 Khung Trụ Sở &amp; Cầu Nối Yêu Thương
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Gắn kết linh kiện, Wi-Fi &amp; Bluetooth</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Đây là ngôi nhà gắn kết toàn bộ các linh kiện riêng lẻ thành một cỗ máy hoàn chỉnh 🏡. Bo mạch chịu trách nhiệm phân phối dòng điện chuẩn xác và truyền tải thông tin giữa các bộ phận với tốc độ cao.
+            </p>
+            <p>
+              Việc chọn bo mạch có sẵn <span class="text-cyan-300 font-semibold">Wi-Fi thế hệ mới và Bluetooth 🎧</span> giúp bạn <span class="text-emerald-400 font-semibold">kết nối tai nghe AirPods, chuột hay bàn phím không dây nhẹ nhàng 🖱️</span>, không cần cắm dây lòng thòng xung quanh bàn làm việc!
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. VỎ CASE: CHIẾC VÁY BẢO VỆ -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-indigo-500/40 transition-all duration-300 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center">
+          <div class="w-full md:w-1/4 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">🛡️ Khung Vỏ Máy</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">Vỏ Case 🎀</h3>
+            <div class="inline-block mt-2 px-3 py-1 rounded bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
+              ✨ Bộ Đầm Thời Trang &amp; Khiên Chắn Bụi
+            </div>
+            <p class="text-xs text-slate-400 mt-3 font-medium">
+              🏷️ Tác vụ: <span class="text-slate-200">Decor góc bàn, thông gió tản nhiệt</span>
+            </p>
+          </div>
+
+          <div class="w-full md:w-3/4 border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-8 text-sm leading-relaxed text-slate-300">
+            <p class="mb-3">
+              Vỏ máy vừa là diện mạo thẩm mỹ cho góc làm việc cá nhân 🪴, vừa là <span class="text-indigo-300 font-semibold">chiếc áo giáp bảo vệ ngăn bụi bẩn hay thú cưng tò mò 🐾</span> chạm vào các linh kiện điện tử nhạy cảm bên trong.
+            </p>
+            <p>
+              Thiết kế mặt lưới thông minh giúp quạt dễ dàng hút gió mát từ bên ngoài vào làm mát cho máy, đảm bảo dàn máy của bạn luôn <span class="text-emerald-400 font-semibold">sạch sẽ, thông thoáng và hoạt động bền bỉ qua năm tháng 🌸</span>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: QUIZ CHỌN NHU CẦU ĐỂ TỰ ĐỘNG SÁNG ĐÈN LINH KIỆN -->
+    <section id="quiz-section" class="scroll-mt-24">
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-700/60 relative overflow-hidden shadow-2xl">
+        <div class="max-w-3xl mb-8 space-y-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-amber-400/40 text-[11px] font-bold text-amber-400 tracking-wider uppercase">
+            <span>🧭</span> Trợ Lý Thông Minh 💡
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-display font-black text-white tracking-tight">
+            BẠN HAY LÀM GÌ NHẤT? <span class="gradient-text">HÃY CHỌN ĐỂ MÁY GỢI Ý MÓN CẦN ƯU TIÊN 🎯</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300">
+            Bấm chọn thói quen sử dụng hàng ngày của bạn, trang web sẽ tự động chiếu đèn neon vào linh kiện quan trọng nhất:
+          </p>
+        </div>
+
+        <!-- 3 Nút Quiz -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <button 
+            id="quiz-btn-light" 
+            onclick="selectQuizNeed('light')"
+            class="quiz-option text-left p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition-all group">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">🌱 Cơ bản</div>
+            <div class="text-sm font-bold text-white group-hover:text-neonCyan transition-colors">Chỉ lướt web, Canva &amp; xem phim 4K 🍿</div>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Ưu tiên CPU mát mẻ, SSD tải dữ liệu tức thì.</p>
+          </button>
+
+          <button 
+            id="quiz-btn-capcut" 
+            onclick="selectQuizNeed('capcut')"
+            class="quiz-option text-left p-5 rounded-2xl bg-neonCyan/10 border border-neonCyan/60 shadow-glow-cyan transition-all group">
+            <div class="text-xs font-semibold text-neonCyan uppercase tracking-wider mb-1">⭐ Khuyên dùng nhất</div>
+            <div class="text-sm font-bold text-white group-hover:text-neonCyan transition-colors">Dựng clip CapCut TikTok &amp; Photoshop sống ảo 🎬</div>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">Ưu tiên Card màn hình 12GB VRAM, RAM 32GB đa nhiệm.</p>
+          </button>
+
+          <button 
+            id="quiz-btn-pro" 
+            onclick="selectQuizNeed('pro')"
+            class="quiz-option text-left p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition-all group">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">🔥 Nâng cao</div>
+            <div class="text-sm font-bold text-white group-hover:text-neonCyan transition-colors">Thiết kế chuyên sâu, Render 3D &amp; 50 tab làm việc 💼</div>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Ưu tiên CPU i7 đa nhân, tản nước AIO và nguồn Gold.</p>
+          </button>
+        </div>
+
+        <!-- Lời khuyên động -->
+        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-start gap-3.5">
+          <div class="text-2xl shrink-0 mt-0.5">
+            💡
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300 leading-relaxed" id="quiz-recommend-desc">
+            Với nhu cầu <strong>CapCut &amp; Photoshop sống ảo 🎬</strong>, bạn nhất định phải đầu tư vào: <span class="text-neonCyan font-bold">Card đồ họa (VGA RTX 3060 12GB) 💎</span> để gánh filter/AI, <span class="text-pastelPink font-bold">RAM 32GB 🪞</span> để không bị tràn bộ nhớ và <span class="text-neonPurple font-bold">CPU Intel Quick Sync ⚡</span> để tua timeline mượt mà!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: BẮT BỆNH MÁY TÍNH -->
+    <section class="scroll-mt-24">
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-700/60 relative overflow-hidden shadow-2xl">
+        <div class="max-w-3xl mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-red-400/40 text-[11px] font-bold text-red-400 tracking-wider uppercase mb-2">
+            <span>🩺</span> Cẩm Nang Bắt Bệnh Thực Tế 🩹
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-display font-black text-white tracking-tight">
+            BẮT BỆNH MÁY TÍNH: <span class="gradient-text">LINH KIỆN YẾU THÌ SẼ BỊ LỖI GÌ? 🚨</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1">
+            Hiểu rõ triệu chứng giúp bạn không bao giờ bị các cửa hàng "vẽ thêm tiền" vào những món không cần thiết nhé:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- Bệnh 1 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all flex items-start gap-4">
+            <div class="text-2xl shrink-0">
+              🎞️
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                Tua video CapCut bị giật, đứng hình 3-4 giây? 😫
+              </h4>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                👉 <strong>Thủ phạm:</strong> CPU quá yếu hoặc CPU không có nhân giải mã <span class="text-neonCyan font-semibold">Intel Quick Sync Video ⚡</span>. Đó là lý do Titan PC luôn chọn dòng chip Intel non-F có sẵn iGPU.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bệnh 2 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all flex items-start gap-4">
+            <div class="text-2xl shrink-0">
+              ⚠️
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                Hiện bảng "Out of Memory" rồi văng app Photoshop? 💥
+              </h4>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                👉 <strong>Thủ phạm:</strong> Mặt bàn RAM chỉ có 8GB-16GB quá chật chội, hoặc card đồ họa thiếu VRAM khi chạy tính năng AI. Mốc <span class="text-pastelPink font-semibold">32GB RAM + 12GB VRAM 🪞</span> sẽ giải quyết triệt để lỗi này!
+              </p>
+            </div>
+          </div>
+
+          <!-- Bệnh 3 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all flex items-start gap-4">
+            <div class="text-2xl shrink-0">
+              ⏳
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                Bật máy mất 3-5 phút, mở ảnh cứ xoay tròn mãi? 🥱
+              </h4>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                👉 <strong>Thủ phạm:</strong> Bạn đang dùng ổ cứng HDD kiểu cũ hoặc ổ SSD giá rẻ. Ổ SSD NVMe tốc độ 3500MB/s <span class="text-amber-300 font-semibold">👗</span> giúp máy thức giấc chỉ trong một cái chớp mắt ⚡.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bệnh 4 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all flex items-start gap-4">
+            <div class="text-2xl shrink-0">
+              ⚡
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                Đang dựng video bỗng dưng máy sập nguồn đen thui? 😱
+              </h4>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                👉 <strong>Thủ phạm:</strong> Trái tim bộ nguồn (PSU) yếu hoặc tản nhiệt bị quá nhiệt &gt; 95°C. Nguồn 650W chuẩn Bronze cùng tản tháp đôi <span class="text-rose-400 font-semibold">❤️</span> giúp bạn thoải mái render qua đêm mà không lo sập!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: BẢNG LINH KIỆN VÀ TÍNH GIÁ ĐỘNG -->
+    <section id="build-breakdown" class="scroll-mt-24 space-y-6">
+      
+      <!-- Preset Switcher & Filter Bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 glass-panel p-4 rounded-2xl border border-slate-800">
+        
+        <!-- Toggle Budget vs Pro -->
+        <div class="flex items-center gap-2 p-1.5 bg-slate-900/90 rounded-xl border border-slate-800 w-full md:w-auto">
+          <button 
+            id="tab-budget"
+            onclick="switchTier('budget')" 
+            class="flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-neonCyan to-neonPurple text-slate-950 font-bold shadow-glow-cyan">
+            <span>✨</span> Bản Tiết Kiệm (&lt; 25 Tr)
+          </button>
+          <button 
+            id="tab-pro"
+            onclick="switchTier('pro')" 
+            class="flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center justify-center gap-2 hover:bg-slate-800/60">
+            <span>🔥</span> Bản Hiệu Năng Cao (&lt; 35 Tr)
+          </button>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 scrollbar-none" id="category-filters">
+          <button onclick="filterCategory('all', event)" class="cat-btn active px-3.5 py-2 rounded-xl text-xs font-semibold bg-neonCyan/15 text-neonCyan border border-neonCyan/40 whitespace-nowrap">
+            🌟 Tất Cả (8 Món)
+          </button>
+          <button onclick="filterCategory('core', event)" class="cat-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-900/80 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">
+            🧠 Bộ Xử Lý (CPU/GPU/RAM)
+          </button>
+          <button onclick="filterCategory('storage', event)" class="cat-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-900/80 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">
+            📁 Bo Mạch &amp; Ổ Đĩa
+          </button>
+          <button onclick="filterCategory('peripherals', event)" class="cat-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-900/80 text-slate-400 hover:text-white border border-slate-800 whitespace-nowrap">
+            ❄️ Hệ Thống &amp; Ngoại Vi
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Component Cards Grid -->
+      <div id="components-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- SECTION: THẨM MỸ VÀ GÓC SETUP -->
+    <section class="scroll-mt-24">
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-700/60 relative overflow-hidden shadow-2xl">
+        <div class="max-w-3xl mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-pastelPink/40 text-[11px] font-bold text-pastelPink tracking-wider uppercase mb-2">
+            <span>🎀</span> Thẩm Mỹ &amp; Cảm Xúc 🌸
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-display font-black text-white tracking-tight">
+            GÓC SETUP XINH XẮN: <span class="gradient-text">MÁY CHẠY ÊM RU, GỌN GÀNG TRÊN BÀN 🪴</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1">
+            Không chỉ mạnh mẽ, chiếc PC còn là một món decor tinh tế giúp góc làm việc của bạn luôn tràn ngập cảm hứng:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          
+          <!-- Êm ái -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all">
+            <div class="text-3xl mb-3">🤫</div>
+            <h4 class="text-sm font-bold text-white font-display">Máy Có Kêu To Không? 🍃</h4>
+            <div class="text-2xl font-black text-neonCyan font-display my-2">&lt; 32 dB</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Mức âm thanh chỉ tương đương <strong>tiếng thì thầm hoặc tiếng lá rơi 🍂</strong>. Bạn có thể yên tâm cắm máy render ban đêm ngay cạnh giường ngủ mà không hề bị nhức đầu.
+            </p>
+          </div>
+
+          <!-- Kích thước -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all">
+            <div class="text-3xl mb-3">👜</div>
+            <h4 class="text-sm font-bold text-white font-display">Kích Thước Thùng Máy? 📐</h4>
+            <div class="text-2xl font-black text-pastelPink font-display my-2">Mini-Tower (~38cm)</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Chiều cao chỉ tương đương <strong>một chiếc túi xách xách tay 👜</strong> hoặc 2 cuốn sách đặt đứng. Thùng máy nhỏ gọn để vừa vặn ngay trên góc bàn làm việc từ 1m – 1m2 của bạn.
+            </p>
+          </div>
+
+          <!-- Setup tone màu -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all">
+            <div class="text-3xl mb-3">🎨</div>
+            <h4 class="text-sm font-bold text-white font-display">Tùy Chọn Tone Màu ✨</h4>
+            <div class="text-2xl font-black text-accentEmerald font-display my-2">Black / Snow White</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Bạn thích phong cách <strong>Cyberpunk cá tính huyền bí 🖤</strong> hay <strong>Tone Trắng Pastel thanh lịch chuẩn Hàn Quốc 🤍</strong>? Titan PC luôn có đủ tùy chọn vỏ case theo sở thích của bạn!
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GIẢI TỎA NỖI SỢ -->
+    <section class="scroll-mt-24">
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-700/60 relative overflow-hidden shadow-2xl">
+        <div class="max-w-3xl mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-emerald-400/40 text-[11px] font-bold text-emerald-400 tracking-wider uppercase mb-2">
+            <span>🛡️</span> An Tâm Tuyệt Đối 100% 💖
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-display font-black text-white tracking-tight">
+            GIẢI TỎA NỖI SỢ: <span class="gradient-text">NHỮNG CÂU HỎI THƯỜNG GẶP 🤔</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1">
+            Dành cho bạn lần đầu dùng máy bàn và còn nhiều điều băn khoăn:
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- Q1 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2.5">
+              <span>⚡</span> Dùng máy tính bàn có sợ bị giật điện hay cháy nổ không?
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2 pl-6 leading-relaxed">
+              <strong>Hoàn toàn an toàn 100%! 🛡️</strong> Bộ nguồn chúng tôi chọn đạt chứng nhận an toàn quốc tế với các công nghệ chống đoản mạch (SCP), chống quá áp (OVP) và chống sét lan truyền. Vỏ case cũng được sơn tĩnh điện cách điện hoàn toàn, bạn sờ chạm thoải mái như một chiếc tivi hay quạt điện gia đình thôi nha!
+            </p>
+          </div>
+
+          <!-- Q2 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2.5">
+              <span>🔌</span> Mua về mình có phải tự cắm dây lòng thòng, phức tạp không?
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2 pl-6 leading-relaxed">
+              <strong>Rất đơn giản, chỉ 2 bước! ✌️</strong> Toàn bộ linh kiện bên trong đã được kỹ thuật viên lắp ráp và đi dây giấu gọn gàng trong thùng máy. Khi mang về nhà, bạn chỉ cần: <strong>(1)</strong> Cắm 1 dây nguồn vào ổ điện, và <strong>(2)</strong> Cắm 1 dây màn hình nối từ case lên màn hình là dùng ngay, hệt như cắm sạc laptop vậy! 💻
+            </p>
+          </div>
+
+          <!-- Q3 -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2.5">
+              <span>📶</span> Máy bàn có kết nối được Wi-Fi và tai nghe Bluetooth không dây không?
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2 pl-6 leading-relaxed">
+              <strong>Có sẵn đầy đủ nha! 🎧</strong> Bo mạch chủ MSI B760M đã tích hợp sẵn chuẩn Wi-Fi 6E bắt sóng cực mạnh không cần dây mạng LAN và Bluetooth 5.3. Bạn chỉ cần bật Bluetooth trên máy là kết nối ngay với tai nghe AirPods, chuột máy tính không dây và loa bluetooth y hệt như điện thoại! 📲
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL CHI TIẾT KỸ THUẬT -->
+  <div id="tech-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-cyberDark/80 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-300">
+    <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-all">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="flex items-start gap-4 mb-6">
+        <div id="modal-icon-container" class="w-12 h-12 rounded-2xl bg-neonCyan/10 text-neonCyan flex items-center justify-center shrink-0 border border-neonCyan/30 text-2xl">
+          <span id="modal-emoji">💻</span>
+        </div>
+        <div>
+          <span id="modal-category" class="text-xs uppercase tracking-wider text-neonCyan font-bold">CPU Xử Lý</span>
+          <h2 id="modal-title" class="text-xl sm:text-2xl font-display font-bold text-white mt-0.5">Intel Core i5-13500</h2>
+          <div class="flex items-center gap-3 mt-2">
+            <span id="modal-price" class="text-base font-bold text-accentEmerald">5.800.000 VNĐ</span>
+            <span id="modal-status-badge" class="text-[11px] px-2.5 py-0.5 rounded-full border font-semibold">Bình Ổn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="space-y-5 text-sm text-slate-300">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
+            <span>🏆</span> Vì Sao Kỹ Thuật Viên Chọn Linh Kiện Này?
+          </h4>
+          <p id="modal-why" class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 leading-relaxed text-slate-200"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
+            <span>✨</span> Lợi Điểm Trực Tiếp Cho CapCut &amp; Photoshop
+          </h4>
+          <p id="modal-impact" class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 leading-relaxed text-slate-200"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
+            <span>📈</span> Vị Thế Giá Cả &amp; Xu Hướng Thị Trường Hiện Tại
+          </h4>
+          <p id="modal-market" class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 leading-relaxed text-slate-200"></p>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="mt-8 pt-4 border-t border-slate-800 flex justify-end">
+        <button onclick="closeModal()" class="px-5 py-2.5 rounded-xl bg-neonCyan text-slate-950 font-bold hover:brightness-110 transition-all text-xs uppercase tracking-wider">
+          Đã Hiểu Chi Tiết ✨
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 glass-panel border border-neonCyan/40 px-4 py-3 rounded-2xl shadow-glow-cyan transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3">
+    <span class="text-base">🎉</span>
+    <span id="toast-message" class="text-xs font-semibold text-white">Đã sao chép báo giá cấu hình vào bộ nhớ tạm!</span>
+  </div>
+
+  <script>
+    /* Full Datasets */
+    const BUILD_DATA = {
+      budget: {
+        name: "Bản Tiết Kiệm Né Bão Giá (< 25 Tr)",
+        image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=80",
+        items: [
+          {
+            id: "b-cpu",
+            category: "core",
+            categoryName: "CPU Xử Lý",
+            emoji: "🧠",
+            name: "Intel Core i5-13500 (Non-F)",
+            spec: "14 Nhân 20 Luồng | Tích Hợp UHD Graphics 770",
+            price: 5800000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "14 nhân xử lý mượt mà đa nhiệm. Bắt buộc chọn bản non-F để giữ lại nhân đồ họa tích hợp Intel UHD 770.",
+            impact: "Kích hoạt Intel Quick Sync giải mã video H.264/HEVC trực tiếp trên CapCut, tua timeline không hề bị giật. Đơn nhân cao giúp Photoshop xử lý filter và brush nhanh tức thì.",
+            market: "Mức giá dưới 6 triệu rất hợp lý, ít bị ảnh hưởng bởi cơn sốt máy chủ AI."
+          },
+          {
+            id: "b-gpu",
+            category: "core",
+            categoryName: "Card Đồ Họa (VGA)",
+            emoji: "💎",
+            name: "NVIDIA GeForce RTX 3060 12GB",
+            spec: "VRAM 12GB GDDR6 | Bộ Mã Hóa NVENC Độc Quyền",
+            price: 7200000,
+            status: "P/P Ngon Nhất",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Sở hữu 12GB VRAM - đè bẹp các dòng card 8GB cùng tầm giá khi làm đồ họa và các tính năng AI.",
+            impact: "CapCut và Photoshop hiện có nhiều tính năng AI (xóa phông, auto tracking, tạo ảnh). 12GB VRAM giúp không bao giờ bị tràn bộ nhớ hay văng app.",
+            market: "Giá đã về vùng giá thực sau các đợt sốt, lựa chọn né bão giá VGA thông minh nhất."
+          },
+          {
+            id: "b-ram",
+            category: "core",
+            categoryName: "Bộ Nhớ Trong (RAM)",
+            emoji: "🪞",
+            name: "TeamGroup Elite Plus 32GB (2x16GB) DDR5 5600MHz",
+            spec: "Dual Channel | Băng Thông DDR5 Thế Hệ Mới",
+            price: 2600000,
+            status: "Bão Giá Nhẹ",
+            statusColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
+            image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "32GB là 'ngưỡng vàng' của dân sáng tạo nội dung. Chạy 2 thanh 16GB nhân đôi tốc độ truyền tải.",
+            impact: "Mở cùng lúc Photoshop nhiều layer, timeline CapCut và 20 tab Chrome nghe nhạc mà không lo máy bị đơ hay giật lag.",
+            market: "RAM DDR5 đang tăng giá nhẹ do các hãng ưu tiên chip nhớ AI, bus 5600MHz là điểm cân bằng giá tốt nhất."
+          },
+          {
+            id: "b-main",
+            category: "storage",
+            categoryName: "Bo Mạch Chủ (Mainboard)",
+            emoji: "🌐",
+            name: "MSI PRO B760M-A WIFI DDR5",
+            spec: "VRM Tản Nhiệt Nhôm Dày | Wi-Fi 6E & Bluetooth 5.3",
+            price: 3400000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Dàn tụ và tản nhiệt phase nguồn khỏe, tích hợp sẵn Wi-Fi và Bluetooth kết nối không dây tiện lợi.",
+            impact: "Giữ xung nhịp CPU luôn ổn định khi render video nhiều giờ liền. Dễ dàng cắm tai nghe AirPods hoặc chuột bluetooth mà không cần mua thêm đầu thu USB.",
+            market: "Nguồn cung dồi dào, giá ổn định."
+          },
+          {
+            id: "b-ssd",
+            category: "storage",
+            categoryName: "Ổ Cứng Lưu Trữ (SSD)",
+            emoji: "👗",
+            name: "Kingston NV2 1TB PCIe 4.0 NVMe",
+            spec: "Tốc Độ Đọc 3500MB/s | Chuẩn M.2 Gen 4x4",
+            price: 1600000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Dung lượng 1TB chuẩn PCIe 4.0 tốc độ cao, thoải mái lưu trữ video và cài đặt phần mềm nặng.",
+            impact: "Tốc độ đọc 3500MB/s giúp load footage 4K tức thì; đồng thời làm ổ nhớ Scratch Disk cho Photoshop giúp phóng to thu nhỏ ảnh cực mượt.",
+            market: "Mức giá khoảng 1.6 triệu cho 1TB tốc độ cao rất dễ chịu."
+          },
+          {
+            id: "b-cooler",
+            category: "peripherals",
+            categoryName: "Tản Nhiệt CPU",
+            emoji: "❄️",
+            name: "Thermalright Peerless Assassin 120 SE",
+            spec: "Tháp Đôi 6 Ống Đồng | 2 Quạt 120mm PWM Êm Ái",
+            price: 700000,
+            status: "Giá Đáy Hời Nhất",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Được mệnh danh là 'vua tản khí thế giới' với 6 ống đồng dẫn nhiệt trực tiếp, hiệu năng ngang tản nước đắt tiền.",
+            impact: "Giữ CPU luôn mát lạnh ở mức 62-67°C khi xuất video CapCut dài, độ bền vĩnh cửu không lo rò rỉ nước.",
+            market: "Mức giá 700.000đ đem lại tỉ lệ P/P không có đối thủ."
+          },
+          {
+            id: "b-psu",
+            category: "peripherals",
+            categoryName: "Nguồn Máy Tính (PSU)",
+            emoji: "❤️",
+            name: "MSI MAG A650BN 650W 80 Plus Bronze",
+            spec: "Công Suất Thực 650W | Chuẩn 80 Plus Bronze",
+            price: 1300000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Thương hiệu MSI uy tín, đạt chứng nhận hiệu suất 80 Plus Bronze và tụ điện chất lượng cao.",
+            impact: "Dàn máy ăn khoảng 320W khi chạy hết công suất. Bộ nguồn 650W hoạt động ở mức 50% tải lý tưởng: quạt cực êm, máy mát và bảo vệ linh kiện nhiều năm.",
+            market: "Giá giữ nguyên ổn định, không bị sốt giá."
+          },
+          {
+            id: "b-case",
+            category: "peripherals",
+            categoryName: "Vỏ Case Máy Tính",
+            emoji: "🎀",
+            name: "Montech Air 100 Lite / Xigmatek Fadil",
+            spec: "Mặt Lưới Mesh Hút Gió | Form Mini-Tower Nhỏ Gọn",
+            price: 750000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Mặt lưới trước hút gió mát trực tiếp, kích thước mini-tower thanh lịch, vừa vặn trên bàn làm việc của bạn.",
+            impact: "Giảm nhiệt độ cho card và CPU từ 5 đến 8°C so với các mẫu case kín bưng.",
+            market: "Mức giá học sinh sinh viên nhưng hoàn thiện rất cứng cáp."
+          }
+        ]
+      },
+      pro: {
+        name: "Bản Hiệu Năng Cao (< 35 Tr)",
+        image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=1200&q=80",
+        items: [
+          {
+            id: "p-cpu",
+            category: "core",
+            categoryName: "CPU Xử Lý",
+            emoji: "🧠",
+            name: "Intel Core i7-14700 (hoặc i5-14600K)",
+            spec: "20 Nhân 28 Luồng | UHD Graphics 770 Xung Boost 5.4GHz",
+            price: 9500000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "20 nhân xử lý siêu tốc, giữ nguyên nhân đồ họa tích hợp UHD 770 cho công nghệ Quick Sync.",
+            impact: "Photoshop render các file in ấn khổ lớn hay filter phức tạp chỉ trong vài giây. Tua timeline CapCut mượt như nhung.",
+            market: "Chip thế hệ mới nhất của Intel, giá ổn định."
+          },
+          {
+            id: "p-gpu",
+            category: "core",
+            categoryName: "Card Đồ Họa (VGA)",
+            emoji: "💎",
+            name: "NVIDIA GeForce RTX 4060 8GB GDDR6",
+            spec: "Kiến Trúc Ada Lovelace | Hỗ Trợ AV1 Encoder Mới Nhất",
+            price: 8400000,
+            status: "Bão Giá Nhẹ",
+            statusColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
+            image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Kiến trúc mới tiết kiệm điện, nhân Tensor AI thế hệ 4 tăng tốc các bộ lọc thông minh.",
+            impact: "Hỗ trợ chuẩn xuất video AV1 mới nhất, dung lượng nhẹ hơn 30% mà độ nét giữ nguyên; render hiệu ứng cực nhanh.",
+            market: "Dòng card thế hệ mới phổ biến nhất của NVIDIA hiện nay."
+          },
+          {
+            id: "p-ram",
+            category: "core",
+            categoryName: "Bộ Nhớ Trong (RAM)",
+            emoji: "🪞",
+            name: "Corsair Vengeance 32GB (2x16GB) DDR5 6000MHz",
+            spec: "Bus 6000MHz CL36 | Tản Nhôm Cao Cấp",
+            price: 3100000,
+            status: "Bão Giá AI",
+            statusColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
+            image: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Bus 6000MHz mở rộng băng thông tối đa cho chip Intel i7 thế hệ mới.",
+            impact: "Tăng tốc độ chuyển cảnh và khả năng mở cùng lúc Photoshop, CapCut, Illustrator mà máy vẫn phản hồi tức thì.",
+            market: "RAM DDR5 cao cấp đang chịu biến động giá, nhưng 32GB là mức đầu tư hoàn toàn xứng đáng."
+          },
+          {
+            id: "p-main",
+            category: "storage",
+            categoryName: "Bo Mạch Chủ (Mainboard)",
+            emoji: "🌐",
+            name: "MSI B760 GAMING PLUS WIFI DDR5",
+            spec: "Form Chuẩn ATX | VRM 12+1+1 Phase Siêu Khỏe",
+            price: 3900000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Bo mạch chuẩn ATX to nạc, tản nhiệt VRM dày dặn gánh tốt CPU i7 khi render liên tục.",
+            impact: "Cung cấp dòng điện ổn định, hỗ trợ Wi-Fi 6E và Bluetooth 5.3 tốc độ cao nhất.",
+            market: "Giá niêm yết chuẩn, bảo hành 36 tháng chính hãng."
+          },
+          {
+            id: "p-ssd",
+            category: "storage",
+            categoryName: "Ổ Cứng Lưu Trữ (SSD)",
+            emoji: "👗",
+            name: "Kingston KC3000 1TB NVMe PCIe Gen 4x4",
+            spec: "Đọc/Ghi 7000MB/s | Có DRAM Cache Riêng Biệt",
+            price: 2300000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Dòng SSD cao cấp nhất phân khúc với tốc độ đọc ghi 7000MB/s và chip DRAM Cache riêng.",
+            impact: "Không bao giờ bị tụt tốc độ khi sao chép video dung lượng hàng trăm GB; làm Scratch Disk Photoshop mượt mà tuyệt đối.",
+            market: "Giữ giá rất tốt, bảo hành lên tới 5 năm."
+          },
+          {
+            id: "p-cooler",
+            category: "peripherals",
+            categoryName: "Tản Nhiệt CPU",
+            emoji: "❄️",
+            name: "Thermalright Aqua Elite 360 ARGB V3",
+            spec: "Tản Nước AIO 360mm | 3 Quạt ARGB Hiệu Suất Cao",
+            price: 1600000,
+            status: "Giá Rất Hời",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Két nước 360mm diện tích làm mát khổng lồ, kiểm soát triệt để nhiệt độ CPU i7 khi render liên tục.",
+            impact: "Giữ CPU luôn dưới 70°C khi ép tải nặng, duy trì xung nhịp cao nhất mà không bị giảm hiệu năng.",
+            market: "Giá 1.6 triệu cho một bộ tản nước AIO 360mm là mức giá rất cạnh tranh."
+          },
+          {
+            id: "p-psu",
+            category: "peripherals",
+            categoryName: "Nguồn Máy Tính (PSU)",
+            emoji: "❤️",
+            name: "MSI MAG A750GL 750W 80 Plus Gold",
+            spec: "Chuẩn PCIe 5.0 & ATX 3.0 | Hiệu Suất 90% Gold",
+            price: 2100000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Chuẩn 80 Plus Gold cao cấp, sẵn sàng cho các thế hệ card đồ họa cao cấp tương lai.",
+            impact: "Tiết kiệm điện năng, linh kiện tụ cao cấp của Nhật đảm bảo an toàn tuyệt đối cho dàn máy.",
+            market: "Giá thành rất ổn định, dùng bền bỉ 5-7 năm."
+          },
+          {
+            id: "p-case",
+            category: "peripherals",
+            categoryName: "Vỏ Case Máy Tính",
+            emoji: "🎀",
+            name: "Montech Air 1000 Premium / Xigmatek Endorphin",
+            spec: "Bể Kính / Mặt Lưới Đa Dạng | Kèm Sẵn 4 Quạt ARGB",
+            price: 1100000,
+            status: "Bình Ổn",
+            statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+            image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=500&q=80",
+            selected: true,
+            why: "Không gian rộng rãi, dễ lắp tản nước 360mm, khung thép chắc chắn và kính cường lực sáng bóng.",
+            impact: "Lưu thông gió tốt, mang lại vẻ đẹp lộng lẫy cho góc làm việc của bạn.",
+            market: "Mức giá hợp lý cho dòng vỏ case cao cấp."
+          }
+        ]
+      }
+    };
+
+    /* App State */
+    let currentTier = 'budget';
+    let currentCategory = 'all';
+    let currentHighlightIds = ['b-gpu', 'b-ram', 'b-cpu'];
+
+    /* Currency Formatter */
+    function formatVND(amount) {
+      return new Intl.NumberFormat('vi-VN').format(amount) + ' VNĐ';
+    }
+
+    /* Price Roll Animation */
+    function animatePrice(elementId, targetValue) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      el.textContent = formatVND(targetValue);
+      el.classList.add('scale-105', 'text-neonCyan');
+      setTimeout(() => {
+        el.classList.remove('scale-105');
+      }, 200);
+    }
+
+    /* Quiz Option Selection & Dynamic Hardware Highlight */
+    function selectQuizNeed(type) {
+      const buttons = document.querySelectorAll('.quiz-option');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-neonCyan/10', 'border-neonCyan/60', 'shadow-glow-cyan');
+        btn.classList.add('bg-slate-900/80', 'border-slate-800');
+      });
+
+      const activeBtn = document.getElementById(`quiz-btn-${type}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-900/80', 'border-slate-800');
+        activeBtn.classList.add('bg-neonCyan/10', 'border-neonCyan/60', 'shadow-glow-cyan');
+      }
+
+      const descBox = document.getElementById('quiz-recommend-desc');
+
+      if (type === 'light') {
+        currentHighlightIds = currentTier === 'budget' ? ['b-cpu', 'b-ssd'] : ['p-cpu', 'p-ssd'];
+        descBox.innerHTML = `Với nhu cầu <strong>lướt web &amp; xem phim nhẹ nhàng 🍿</strong>, bạn chỉ cần một chiếc <strong>CPU có iGPU mượt mà 🧠</strong> và <strong>SSD tốc độ cao 👗</strong> là đã quá đủ nhanh rồi!`;
+      } else if (type === 'capcut') {
+        currentHighlightIds = currentTier === 'budget' ? ['b-gpu', 'b-ram', 'b-cpu'] : ['p-gpu', 'p-ram', 'p-cpu'];
+        descBox.innerHTML = `Với nhu cầu <strong>CapCut &amp; Photoshop sống ảo 🎬</strong>, bạn nhất định phải đầu tư vào: <span class="text-neonCyan font-bold">Card đồ họa (VGA RTX 3060 12GB) 💎</span> để gánh filter/AI, <span class="text-pastelPink font-bold">RAM 32GB 🪞</span> để không bị tràn bộ nhớ và <span class="text-neonPurple font-bold">CPU Intel Quick Sync ⚡</span> để tua timeline mượt mà!`;
+      } else {
+        currentHighlightIds = currentTier === 'budget' ? ['b-cpu', 'b-gpu', 'b-ram', 'b-cooler'] : ['p-cpu', 'p-gpu', 'p-ram', 'p-cooler'];
+        descBox.innerHTML = `Với nhu cầu <strong>Đồ Họa Nặng &amp; 3D Render 💼</strong>, bạn nên cân nhắc chuyển sang <strong class="text-neonCyan font-bold">Bản Hiệu Năng Cao (&lt; 35 Tr) 🔥</strong> để có CPU i7 20 nhân và tản nước AIO 360mm giúp máy mát mẻ khi render liên tục!`;
+      }
+
+      renderComponents();
+    }
+
+    /* Render Components Grid */
+    function renderComponents() {
+      const container = document.getElementById('components-grid');
+      const tierData = BUILD_DATA[currentTier];
+      
+      const filteredItems = tierData.items.filter(item => {
+        if (currentCategory === 'all') return true;
+        return item.category === currentCategory;
+      });
+
+      container.innerHTML = filteredItems.map(item => {
+        const isHighlighted = currentHighlightIds.includes(item.id);
+        return `
+          <div class="glass-panel glass-card-hover rounded-2xl p-4 flex flex-col justify-between border ${isHighlighted ? 'recommended-glow' : 'border-slate-800'} relative group ${item.selected ? 'opacity-100' : 'opacity-50'}">
+            
+            ${isHighlighted ? `
+              <div class="absolute -top-3 left-4 z-10 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-neonCyan to-neonPurple text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-lg flex items-center gap-1">
+                <span>✨</span> Khuyên Dùng Cho Nhu Cầu Này
+              </div>
+            ` : ''}
+
+            <!-- Top Row: Checkbox & Status -->
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3 ${isHighlighted ? 'mt-2' : ''}">
+                <label class="flex items-center gap-2 cursor-pointer select-none">
+                  <input 
+                    type="checkbox" 
+                    ${item.selected ? 'checked' : ''} 
+                    onchange="toggleItemSelection('${item.id}')"
+                    class="w-4 h-4 rounded text-neonCyan bg-slate-900 border-slate-700 focus:ring-0 cursor-pointer accent-neonCyan"
+                  />
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <span>${item.emoji}</span> ${item.categoryName}
+                  </span>
+                </label>
+                <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full border ${item.statusColor}">
+                  ${item.status}
+                </span>
+              </div>
+
+              <!-- Product Image -->
+              <div class="relative w-full h-36 rounded-xl overflow-hidden mb-3 bg-slate-900 border border-slate-800">
+                <img 
+                  src="${item.image}" 
+                  alt="${item.name}" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/400x300/111726/00F2FE?text=${encodeURIComponent(item.categoryName)}'"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-cyberDark/90 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+                  <span class="text-xs font-bold text-white font-display truncate">${item.spec}</span>
+                </div>
+              </div>
+
+              <!-- Title & Impact Description -->
+              <h3 class="text-sm font-bold text-white leading-snug line-clamp-2 min-h-[2.5rem]">${item.name}</h3>
+              <p class="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">${item.impact}</p>
+            </div>
+
+            <!-- Bottom Row: Price & Deep-Dive Info Button -->
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] uppercase text-slate-500 block">Đơn giá</span>
+                <span class="text-sm font-extrabold text-neonCyan font-display">${formatVND(item.price)}</span>
+              </div>
+
+              <button 
+                onclick="openModal('${item.id}')"
+                class="px-2.5 py-1.5 rounded-lg bg-slate-800/80 hover:bg-neonCyan hover:text-slate-950 text-slate-300 text-xs font-semibold flex items-center gap-1.5 transition-all">
+                <span>🔍</span> Chi Tiết
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+      updateCalculations();
+    }
+
+    /* Toggle Item Selection */
+    function toggleItemSelection(itemId) {
+      const tierData = BUILD_DATA[currentTier];
+      const item = tierData.items.find(i => i.id === itemId);
+      if (item) {
+        item.selected = !item.selected;
+        renderComponents();
+      }
+    }
+
+    /* Recalculate Total Cost */
+    function updateCalculations() {
+      const tierData = BUILD_DATA[currentTier];
+      const selectedItems = tierData.items.filter(i => i.selected);
+      const total = selectedItems.reduce((sum, i) => sum + i.price, 0);
+
+      animatePrice('live-total-price', total);
+
+      const countEl = document.getElementById('selected-parts-count');
+      if (countEl) {
+        countEl.textContent = `📦 ${selectedItems.length} / ${tierData.items.length} Món`;
+      }
+    }
+
+    /* Switch Preset Tier */
+    function switchTier(tierKey) {
+      currentTier = tierKey;
+      
+      const tabBudget = document.getElementById('tab-budget');
+      const tabPro = document.getElementById('tab-pro');
+      const heroImg = document.getElementById('hero-case-img');
+
+      if (tierKey === 'budget') {
+        tabBudget.className = "flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-neonCyan to-neonPurple text-slate-950 font-bold shadow-glow-cyan";
+        tabPro.className = "flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center justify-center gap-2 hover:bg-slate-800/60";
+        heroImg.src = BUILD_DATA.budget.image;
+        currentHighlightIds = ['b-gpu', 'b-ram', 'b-cpu'];
+      } else {
+        tabPro.className = "flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-neonCyan to-neonPurple text-slate-950 font-bold shadow-glow-cyan";
+        tabBudget.className = "flex-1 md:flex-initial px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center justify-center gap-2 hover:bg-slate-800/60";
+        heroImg.src = BUILD_DATA.pro.image;
+        currentHighlightIds = ['p-gpu', 'p-ram', 'p-cpu'];
+      }
+
+      renderComponents();
+    }
+
+    /* Filter Components by Category */
+    function filterCategory(categoryKey, event) {
+      currentCategory = categoryKey;
+      
+      const buttons = document.querySelectorAll('.cat-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-neonCyan/15', 'text-neonCyan', 'border-neonCyan/40');
+        btn.classList.add('bg-slate-900/80', 'text-slate-400', 'border-slate-800');
+      });
+
+      if (event && event.target) {
+        const targetBtn = event.target.closest('.cat-btn');
+        if (targetBtn) {
+          targetBtn.classList.remove('bg-slate-900/80', 'text-slate-400', 'border-slate-800');
+          targetBtn.classList.add('bg-neonCyan/15', 'text-neonCyan', 'border-neonCyan/40');
+        }
+      }
+
+      renderComponents();
+    }
+
+    /* Open Modal Details */
+    function openModal(itemId) {
+      const tierData = BUILD_DATA[currentTier];
+      const item = tierData.items.find(i => i.id === itemId);
+      if (!item) return;
+
+      document.getElementById('modal-emoji').textContent = item.emoji || "💻";
+      document.getElementById('modal-category').textContent = item.categoryName;
+      document.getElementById('modal-title').textContent = item.name;
+      document.getElementById('modal-price').textContent = formatVND(item.price);
+      
+      const statusBadge = document.getElementById('modal-status-badge');
+      statusBadge.textContent = item.status;
+      statusBadge.className = `text-[11px] px-2.5 py-0.5 rounded-full border font-semibold ${item.statusColor}`;
+
+      document.getElementById('modal-why').textContent = item.why;
+      document.getElementById('modal-impact').textContent = item.impact;
+      document.getElementById('modal-market').textContent = item.market;
+
+      const modal = document.getElementById('tech-modal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      lucide.createIcons();
+    }
+
+    /* Close Modal */
+    function closeModal() {
+      const modal = document.getElementById('tech-modal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    /* Close modal with ESC key */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    /* Copy Configuration to Clipboard */
+    document.getElementById('btn-copy-config').addEventListener('click', () => {
+      const tierData = BUILD_DATA[currentTier];
+      const selectedItems = tierData.items.filter(i => i.selected);
+      const total = selectedItems.reduce((sum, i) => sum + i.price, 0);
+
+      let text = `=== 🌸 ${tierData.name.toUpperCase()} 🌸 ===\n`;
+      text += `Dành cho CapCut, Photoshop & Creator Xinh Đẹp ✨\n\n`;
+      selectedItems.forEach((item, index) => {
+        text += `${index + 1}. [${item.emoji} ${item.categoryName}] ${item.name} (${item.spec}) - ${formatVND(item.price)}\n`;
+      });
+      text += `\n💰 TỔNG CỘNG: ${formatVND(total)}\n`;
+      text += `🛡️ Bảo hành chính hãng 36 tháng. Đã bao gồm Wi-Fi 6E & Bluetooth không dây 🎧`;
+
+      const tempTextarea = document.createElement('textarea');
+      tempTextarea.value = text;
+      document.body.appendChild(tempTextarea);
+      tempTextarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempTextarea);
+
+      // Show Toast Notification
+      const toast = document.getElementById('toast');
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    });
+
+    /* Initialize on Page Load */
+    window.addEventListener('DOMContentLoaded', () => {
+      renderComponents();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
