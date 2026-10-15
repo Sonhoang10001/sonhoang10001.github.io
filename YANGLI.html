@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yang Li (杨力) • The Solo Expedition: Vietnam Monograph</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#F9F8F5',
+            concrete: '#F2EFEB',
+            slateDark: '#181E1B',
+            charcoal: '#232826',
+            terracotta: '#B85032',
+            terracottaDark: '#9E3F25',
+            brass: '#C5A059',
+            sage: '#5E6A63'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Noto Serif SC"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+            chinese: ['"Noto Serif SC"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom scrollbars & subtle treatments */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F2EFEB;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B85032;
+    }
+    .modal-backdrop {
+      background: rgba(24, 30, 27, 0.75);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="bg-ivory text-slateDark font-sans antialiased selection:bg-terracotta/20 selection:text-slateDark min-h-screen">
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slateDark text-ivory px-4 py-3 rounded-xl shadow-2xl text-xs flex items-center space-x-2.5 border border-brass/30 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none">
+    <i data-lucide="check" class="w-4 h-4 text-brass"></i>
+    <span id="toast-text">Notification message</span>
+  </div>
+
+  <!-- Top Confidential Dossier Bar -->
+  <div class="bg-slateDark text-ivory border-b border-brass/20 text-[11px] py-2 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="w-2 h-2 rounded-full bg-brass inline-block animate-pulse"></span>
+        <span class="tracking-widest uppercase font-mono text-stone-300">
+          CONFIDENTIAL DOSSIER • YANG LI (杨力 / ゆとり) • SHANGHAI ARCHIVE
+        </span>
+      </div>
+      <div class="flex items-center space-x-4 text-stone-400 font-mono text-[10px]">
+        <span>HANOI & HO CHI MINH CITY</span>
+        <span>•</span>
+        <span class="text-brass">SOLO GENTLEMAN FIELD GUIDE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Minimalist Header Bar -->
+  <header class="sticky top-0 z-40 bg-ivory/90 backdrop-blur-md border-b border-slateDark/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-slateDark text-ivory flex items-center justify-center font-serif text-base font-semibold tracking-wider border border-brass/30">
+          力
+        </div>
+        <div>
+          <span class="font-serif tracking-tight text-base font-bold text-slateDark block leading-tight">
+            THE SOLO EXPEDITION
+          </span>
+          <span class="text-[10px] text-terracotta tracking-widest uppercase font-mono block">
+            Vietnam Monograph
+          </span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-medium tracking-wide text-stone-600">
+        <a href="#transit" class="hover:text-terracotta transition-colors">Transit Logistics</a>
+        <a href="#directory" class="hover:text-terracotta transition-colors">80-Spot Gastronomy</a>
+        <a href="#field-notes" class="hover:text-terracotta transition-colors">Field Notes & Cafes</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="#directory" class="text-xs bg-slateDark hover:bg-charcoal text-ivory px-4 py-2 rounded-xl font-medium transition flex items-center space-x-2 shadow-sm border border-brass/20">
+          <i data-lucide="compass" class="w-3.5 h-3.5 text-brass"></i>
+          <span>Explore 80 Spots</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-16 sm:py-24 border-b border-slateDark/10 bg-gradient-to-b from-concrete to-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slateDark/5 border border-slateDark/10 text-[11px] text-slateDark font-mono">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brass"></i>
+            <span>CURATED PRIVATE DOSSIER • SOLO TRAVELER EDITION</span>
+          </div>
+
+          <!-- Chinese Greeting (Mandatory by Request) -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl text-slateDark font-serif font-medium leading-[1.25]">
+            欢迎来到越南，
+            <span class="text-terracotta italic block sm:inline font-chinese font-semibold"> YANG LI (杨力 / ゆとり)</span>
+            <span class="block text-2xl sm:text-3xl text-stone-700 font-normal font-chinese mt-2">
+              开启专属你的独行越境漫游
+            </span>
+          </h1>
+
+          <!-- English Subtitle -->
+          <p class="text-sm sm:text-base text-stone-600 font-sans leading-relaxed max-w-2xl">
+            An architectural, transit, and 80-spot culinary curation crafted for the discerning solo traveler from Shanghai. Spanning the quiet, tree-lined French colonial arteries and mist-shrouded alleyways of Hanoi to the raw modernist energy and neon-drenched night stalls of Saigon.
+          </p>
+
+          <!-- Metrics Bar -->
+          <div class="pt-2 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slateDark/10 max-w-2xl">
+            <div>
+              <span class="text-[11px] font-mono text-stone-500 uppercase block">Curated Volume</span>
+              <span class="font-serif text-xl font-bold text-slateDark">80 Venues</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-stone-500 uppercase block">Territories</span>
+              <span class="font-serif text-xl font-bold text-slateDark">Hanoi + Saigon</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-stone-500 uppercase block">Pace & Style</span>
+              <span class="font-serif text-xl font-bold text-slateDark">Unrushed Solo</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-stone-500 uppercase block">Navigation</span>
+              <span class="font-serif text-xl font-bold text-terracotta">Direct Maps</span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="#directory" class="inline-flex items-center space-x-2 bg-terracotta hover:bg-terracottaDark text-white px-5 py-3 rounded-xl text-xs font-medium transition shadow-sm">
+              <i data-lucide="utensils" class="w-4 h-4"></i>
+              <span>Access Complete Directory</span>
+            </a>
+            <a href="#transit" class="inline-flex items-center space-x-2 bg-white hover:bg-concrete border border-stone-300 text-stone-800 px-5 py-3 rounded-xl text-xs font-medium transition shadow-xs">
+              <i data-lucide="car" class="w-4 h-4 text-stone-600"></i>
+              <span>Solo Transit Guide</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Passport Card -->
+        <div class="lg:col-span-4">
+          <div class="bg-slateDark text-ivory rounded-2xl p-6 shadow-2xl border border-brass/30 relative overflow-hidden">
+            <div class="absolute top-0 right-0 transform translate-x-6 -translate-y-6 w-36 h-36 bg-brass/10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="flex justify-between items-start border-b border-stone-700/80 pb-4 mb-4">
+              <div>
+                <span class="text-[10px] font-mono tracking-widest text-brass uppercase block">
+                  INDIVIDUAL DOSSIER
+                </span>
+                <h3 class="font-serif text-xl font-medium text-white tracking-wide">YANG LI (杨力)</h3>
+              </div>
+              <span class="text-[10px] px-2.5 py-1 rounded bg-stone-800 text-stone-300 font-mono border border-stone-700">
+                ゆとり様
+              </span>
+            </div>
+
+            <div class="space-y-3 text-xs text-stone-300">
+              <div class="flex justify-between">
+                <span class="text-stone-400">Origin:</span>
+                <span class="font-mono text-white">Shanghai (上海), China</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-stone-400">Designation:</span>
+                <span class="text-stone-200">Architectural & Street Gastronomy</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-stone-400">Total Coverage:</span>
+                <span class="text-stone-200">40 Hanoi + 40 Saigon spots</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-stone-400">Maps Integration:</span>
+                <span class="text-brass font-mono">One-Click Google Maps</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-stone-800 text-[11px] text-stone-400 flex items-center justify-between">
+              <span>Status: Field Deployment Ready</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Transit Masterclass -->
+  <section id="transit" class="py-16 bg-white border-b border-slateDark/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-xl mb-12">
+        <span class="text-xs font-mono tracking-widest uppercase text-terracotta font-semibold">
+          SECTION 01 • LOGISTICS & MOBILITY
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl text-slateDark font-medium mt-1">
+          Urban Transit Masterclass
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-500 mt-2 leading-relaxed">
+          Navigating Vietnamese streets alone demands zero friction. Avoid unofficial roadside touts and rely exclusively on verified app hailing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1: Grab -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 flex flex-col justify-between hover:border-slateDark/40 transition">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-[#00B14F]/10 text-[#00B14F] flex items-center justify-center mb-4">
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-serif text-lg font-semibold text-slateDark">
+                Grab (All-in-One SuperApp)
+              </h3>
+              <span class="text-[10px] bg-[#00B14F]/15 text-[#00B14F] font-semibold px-2 py-0.5 rounded">
+                Primary
+              </span>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              The undisputed leader of Southeast Asian mobility. Features full English/Chinese interface and <strong>built-in real-time translation</strong> inside the driver chatbox.
+            </p>
+            <div class="space-y-2.5 text-xs text-stone-600 border-t border-stone-200 pt-3">
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>GrabBike (Motorbike):</strong> Fast and exhilarating; essential for slicing through traffic and plunging into deep alleyways (<em>ngõ</em> & <em>hẻm</em>). Clean helmet provided.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>GrabCar (Automobile):</strong> Recommended for airport transfers, tropical rainstorms, and carrying your luggage with fixed upfront rates.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>Payment:</strong> Seamlessly binds to international cards (Visa, Mastercard, Amex, UnionPay) to prevent cash-handling friction.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Xanh SM -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 flex flex-col justify-between hover:border-slateDark/40 transition">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-cyan-700/10 text-cyan-800 flex items-center justify-center mb-4">
+              <i data-lucide="car" class="w-5 h-5"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-serif text-lg font-semibold text-slateDark">
+                Xanh SM (Pure-Electric Fleet)
+              </h3>
+              <span class="text-[10px] bg-cyan-800/15 text-cyan-800 font-semibold px-2 py-0.5 rounded">
+                Clean Comfort
+              </span>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Vietnam's prestigious all-electric fleet by VinFast (cyan-teal livery). Zero exhaust fumes, completely silent, and air-conditioned to perfection.
+            </p>
+            <div class="space-y-2.5 text-xs text-stone-600 border-t border-stone-200 pt-3">
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>Zero Motion Sickness:</strong> Silent cabins with immaculate air quality—ideal if you are sensitive to traditional petrol taxi fumes.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>Standard of Service:</strong> Professional drivers in uniforms, disciplined routing, and transparent surge pricing during rush hours.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>App Option:</strong> Download the standalone "Xanh SM" app with full English language setup.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: 4G Connectivity & Alleys -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 flex flex-col justify-between hover:border-slateDark/40 transition">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-brass/15 text-brass flex items-center justify-center mb-4">
+              <i data-lucide="smartphone" class="w-5 h-5"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-serif text-lg font-semibold text-slateDark">
+                Airport 4G & Alley Routing
+              </h3>
+              <span class="text-[10px] bg-brass/20 text-stone-800 font-semibold px-2 py-0.5 rounded">
+                Connectivity
+              </span>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Instant mobile data is the cornerstone of solo urban exploration. High-speed 4G ensures real-time navigation inside labyrinthine alleys.
+            </p>
+            <div class="space-y-2.5 text-xs text-stone-600 border-t border-stone-200 pt-3">
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>eSIM Setup:</strong> Procure a Viettel or Vinaphone eSIM with a local phone number prior to arrival or at HAN/SGN airport arrival halls.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>Alley Navigation:</strong> Many spots sit inside <em>ngõ</em> or <em>hẻm</em>. If a car cannot enter, drivers drop you at the alley mouth; walk 20-50m inward.</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <span class="text-terracotta font-bold">•</span>
+                <span><strong>Sidewalk Alert:</strong> Keep phones held securely with both hands or tucked away when standing near curbs to prevent drive-by snatching.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: 80-Spot Culinary Directory -->
+  <section id="directory" class="py-16 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-mono tracking-widest uppercase text-terracotta font-semibold">
+            SECTION 02 • GASTRONOMIC DOSSIER (80 VENUES)
+          </span>
+          <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl text-slateDark font-medium mt-1">
+            The Curated Culinary Monograph
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1 max-w-xl">
+            40 legendary spots in Hanoi paired with 40 iconic culinary institutions in Ho Chi Minh City. Click any venue to reveal coordinates and launch Google Maps.
+          </p>
+        </div>
+
+        <!-- City Switcher Tabs -->
+        <div class="inline-flex p-1.5 bg-concrete rounded-xl border border-stone-300">
+          <button id="tab-hanoi" onclick="switchCity('hanoi')" class="flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition bg-slateDark text-ivory shadow-sm">
+            <span>HANOI • 河内 (40)</span>
+          </button>
+          <button id="tab-saigon" onclick="switchCity('saigon')" class="flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition text-stone-600 hover:text-slateDark">
+            <span>SAIGON • 西贡 (40)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search & Filters Container -->
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-xs mb-8 space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          
+          <!-- Search Bar -->
+          <div class="md:col-span-5 relative">
+            <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input
+              id="search-input"
+              type="text"
+              oninput="handleSearch(this.value)"
+              placeholder="Filter by dish, street, or Chinese name (e.g., 牛肉粉, Bát Đàn, pate)..."
+              class="w-full pl-10 pr-10 py-2.5 text-xs bg-ivory rounded-xl border border-stone-200 focus:outline-none focus:border-slateDark transition"
+            >
+            <button id="search-clear-btn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 text-xs font-medium">
+              Clear
+            </button>
+          </div>
+
+          <!-- Category Pills -->
+          <div class="md:col-span-7 flex flex-wrap gap-2" id="category-pills">
+            <button onclick="setCategory('all')" data-cat="all" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-slateDark text-white">
+              All 40 Spots
+            </button>
+            <button onclick="setCategory('noodles')" data-cat="noodles" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200">
+              Noodles & Broths
+            </button>
+            <button onclick="setCategory('mains')" data-cat="mains" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200">
+              Grills & Rice Mains
+            </button>
+            <button onclick="setCategory('snacks')" data-cat="snacks" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200">
+              Alleys & Street Bites
+            </button>
+            <button onclick="setCategory('hotpot')" data-cat="hotpot" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200">
+              Hotpot & Specialties
+            </button>
+            <button onclick="setCategory('dessert')" data-cat="dessert" class="cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200">
+              Coffee & Sweets
+            </button>
+          </div>
+
+        </div>
+
+        <div class="flex justify-between items-center text-[11px] text-stone-500 font-mono pt-1 border-t border-stone-100">
+          <span id="spots-count-label">Showing 40 of 40 curated locations in Hanoi</span>
+          <span>Sorted by prestige & Google Maps footprint</span>
+        </div>
+      </div>
+
+      <!-- Restaurant Cards Bento Grid -->
+      <div id="spots-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden p-12 text-center bg-white rounded-2xl border border-stone-200">
+        <i data-lucide="compass" class="w-8 h-8 text-stone-300 mx-auto mb-2"></i>
+        <p class="font-serif text-base text-stone-700">No matching culinary spots located.</p>
+        <p class="text-xs text-stone-400 mt-1">Try resetting your search query or selecting "All 40 Spots".</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Solo Gentleman's Field Notes & Etiquette -->
+  <section id="field-notes" class="py-16 bg-white border-t border-slateDark/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-xl mb-12">
+        <span class="text-xs font-mono tracking-widest uppercase text-terracotta font-semibold">
+          SECTION 03 • GENTLEMAN'S DOSSIER
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl text-slateDark font-medium mt-1">
+          Field Notes, Cafes & Etiquette
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-500 mt-2 leading-relaxed">
+          Curated for an urban traveler attuned to architecture, subtle coffee spaces, and effortless interactions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Column 1: Architectural Cafes -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 space-y-4">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="coffee" class="w-4 h-4 text-terracotta"></i>
+            <h3 class="font-serif font-semibold text-base text-slateDark">
+              Architectural Coffee Sanctuaries
+            </h3>
+          </div>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Just as Shanghai prides itself on minimal cafe enclaves along Anfu and Julu roads, Vietnam possesses a world-class third-wave and legacy cafe fabric.
+          </p>
+          
+          <div class="space-y-3 text-xs text-stone-600">
+            <div class="p-3.5 bg-white rounded-xl border border-stone-200">
+              <span class="font-semibold text-stone-900 block mb-1">
+                Hanoi • French Villa Hideouts (Phan Chu Trinh)
+              </span>
+              Seek secluded courtyards hidden behind peeling ochre stucco. Enjoy a single-origin cold brew or iced milk drip (Cà phê sữa đá) under rotating vintage ceiling fans.
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-stone-200">
+              <span class="font-semibold text-stone-900 block mb-1">
+                Saigon • The 42 Nguyen Hue Cafe Apartments
+              </span>
+              A 9-story mid-century residential modernist block transformed into stacked boutique indie cafes and vinyl listening lounges overlooking the pedestrian boulevard.
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Digital Payment & Cash Etiquette -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 space-y-4">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="shield" class="w-4 h-4 text-terracotta"></i>
+            <h3 class="font-serif font-semibold text-base text-slateDark">
+              Currency, Cards & Etiquette
+            </h3>
+          </div>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Rules of engagement across street counters and dining institutions:
+          </p>
+
+          <div class="space-y-3 text-xs text-stone-600">
+            <div class="p-3.5 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="font-semibold text-stone-900 block">
+                Cashless vs. Cash Norms
+              </span>
+              Boutique cafes and upscale restaurants happily accept international cards (Visa/Mastercard/Apple Pay). Street stalls and alley carts are <strong>strictly cash-only</strong>. Keep 300,000–500,000 VND in smaller banknotes (10k, 20k, 50k, 100k).
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="font-semibold text-stone-900 block">
+                Wet Napkin Fee (Khăn Lạnh)
+              </span>
+              At casual noodle stalls, sealed wet towelettes placed on the table often incur a small nominal charge (~2,000 to 5,000 VND) if opened.
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="font-semibold text-stone-900 block">
+                Tipping Culture
+              </span>
+              Tipping is not customary at street stalls. In speakeasy cocktail bars or private spas, leaving a 5-10% gratuity is welcomed as polite recognition.
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Phrase Deck with Instant Copy -->
+        <div class="p-6 rounded-2xl bg-ivory border border-stone-200 space-y-4">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="volume-2" class="w-4 h-4 text-terracotta"></i>
+            <h3 class="font-serif font-semibold text-base text-slateDark">
+              Solo Survival Phrases
+            </h3>
+          </div>
+          <p class="text-xs text-stone-500">
+            Tap the copy button to clipboard or show your smartphone screen directly to stall owners:
+          </p>
+
+          <div class="space-y-2 pt-1">
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Xin chào</div>
+                <div class="text-[11px] text-terracotta font-medium">Hello / Greetings</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: Sin chow</div>
+              </div>
+              <button onclick="copyToClipboard('Xin chào', 'Copied \'Xin chào\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Cảm ơn</div>
+                <div class="text-[11px] text-terracotta font-medium">Thank you very much</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: Gam un</div>
+              </div>
+              <button onclick="copyToClipboard('Cảm ơn', 'Copied \'Cảm ơn\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Em ơi, tính tiền</div>
+                <div class="text-[11px] text-terracotta font-medium">Check / Bill, please</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: Em oi, tinh tin</div>
+              </div>
+              <button onclick="copyToClipboard('Em ơi, tính tiền', 'Copied \'Em ơi, tính tiền\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Không đường</div>
+                <div class="text-[11px] text-terracotta font-medium">No sugar (Critical for coffee)</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: Kong du-ong</div>
+              </div>
+              <button onclick="copyToClipboard('Không đường', 'Copied \'Không đường\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Ít đá thôi</div>
+                <div class="text-[11px] text-terracotta font-medium">Less ice, please</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: It da thoi</div>
+              </div>
+              <button onclick="copyToClipboard('Ít đá thôi', 'Copied \'Ít đá thôi\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-stone-200 flex items-center justify-between text-xs hover:border-slateDark/40 transition">
+              <div>
+                <div class="font-serif font-bold text-stone-900 text-sm">Mang về</div>
+                <div class="text-[11px] text-terracotta font-medium">Takeaway / To-go</div>
+                <div class="text-[10px] text-stone-400 font-mono">Approx: Mang ve</div>
+              </div>
+              <button onclick="copyToClipboard('Mang về', 'Copied \'Mang về\' to clipboard')" class="p-2 rounded-lg bg-stone-100 hover:bg-slateDark hover:text-white text-stone-600 transition" title="Copy phrase">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Google Maps Pop-Up Modal -->
+  <div id="modal-container" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop">
+    <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-300 transform transition-all">
+      
+      <!-- Modal Header -->
+      <div class="bg-slateDark text-ivory p-5 flex items-start justify-between">
+        <div>
+          <span class="text-[10px] font-mono text-brass uppercase tracking-wider block">
+            COORDINATES & NAVIGATION
+          </span>
+          <h3 id="modal-name" class="font-serif text-xl font-bold mt-1 text-white">
+            Venue Name
+          </h3>
+          <p id="modal-district" class="text-xs text-stone-400 mt-0.5">District</p>
+        </div>
+        <button onclick="closeModal()" class="text-stone-400 hover:text-white p-1 rounded-full hover:bg-stone-800 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 space-y-4">
+        
+        <!-- Simulated Coordinate Canvas -->
+        <div class="relative w-full h-32 rounded-xl bg-concrete border border-stone-200 overflow-hidden flex flex-col items-center justify-center text-center p-4">
+          <div class="w-10 h-10 rounded-full bg-terracotta text-white flex items-center justify-center shadow-md mb-2">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <p id="modal-address" class="text-xs font-semibold text-stone-900 z-10 max-w-xs">
+            Venue Full Address
+          </p>
+          <span class="text-[10px] text-stone-400 font-mono mt-1">Verified Location Anchor</span>
+        </div>
+
+        <!-- Dish highlight -->
+        <div class="p-3.5 rounded-xl bg-ivory border border-stone-200 space-y-1.5 text-xs">
+          <div class="flex justify-between">
+            <span class="text-stone-400 font-mono uppercase text-[10px]">Order Item:</span>
+            <span id="modal-dish-vi" class="font-semibold text-stone-900">Vietnamese Name</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-stone-400 font-mono uppercase text-[10px]">Chinese:</span>
+            <span id="modal-dish-zh" class="text-terracotta font-medium">Chinese Name</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-stone-400 font-mono uppercase text-[10px]">Atmosphere:</span>
+            <span id="modal-vibe" class="text-stone-700 italic">Vibe description</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-3 pt-2">
+          <a
+            id="modal-map-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 inline-flex items-center justify-center space-x-2 py-3 px-4 rounded-xl bg-slateDark hover:bg-charcoal text-white text-xs font-medium transition shadow-sm"
+          >
+            <span>Open in Google Maps</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+
+          <button
+            id="modal-copy-btn"
+            onclick="copyCurrentModalAddress()"
+            class="px-4 py-3 rounded-xl border border-stone-300 hover:bg-stone-100 text-xs font-medium text-stone-800 transition flex items-center space-x-1.5"
+          >
+            <i data-lucide="copy" class="w-4 h-4"></i>
+            <span>Copy Address</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Editorial Footer -->
+  <footer class="bg-slateDark text-ivory py-12 border-t border-brass/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4">
+      <div class="w-9 h-9 rounded-lg bg-brass text-slateDark mx-auto flex items-center justify-center font-serif font-bold text-base shadow-sm">
+        力
+      </div>
+      <h4 class="font-serif text-lg tracking-wide text-white">
+        May your solo journey through Vietnam be measured in clarity, craftsmanship, and unforgettable flavors.
+      </h4>
+      <p class="text-xs text-stone-400 max-w-lg mx-auto leading-relaxed">
+        Curated exclusively for YANG LI (杨力 / ゆとり) • Shanghai Architectural & Gastronomic Monograph.
+      </p>
+      <div class="pt-4 text-[10px] text-stone-500 font-mono tracking-widest uppercase">
+        HANOI & HO CHI MINH CITY • 80-VENUE MONOGRAPH
+      </div>
+    </div>
+  </footer>
+
+  <!-- Complete 80-Spot JavaScript Application Engine -->
+  <script>
+    // 80 Complete Spots Data (40 Hanoi + 40 Saigon)
+    const restaurantsData = {
+      hanoi: [
+        {
+          id: 'hn-01', rank: '01', name: 'Phở Gia Truyền Bát Đàn',
+          dishVi: 'Phở tái nạm', dishZh: '半熟牛腩牛肉粉',
+          address: '49 Bát Đàn, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Legendary self-service queue. Pristine, clear bone marrow broth with zero excessive MSG, balanced with fresh scallion whites.',
+          vibe: 'Timeless street queue • Authentic early morning ritual',
+          rating: '4.7 / 5.0 (7,900+ reviews)', price: '55,000 - 65,000 VND (~¥16-19)',
+          mapQuery: '49+Bat+Dan+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-02', rank: '02', name: 'Chả Cá Thăng Long',
+          dishVi: 'Chả cá lăng + Lòng cá', dishZh: '莳萝葱香黄骨鱼锅 + 脆鱼杂',
+          address: '19 - 21 - 31 Đường Thành, Hoàn Kiếm, Hà Nội', category: 'mains', categoryLabel: 'Specialty Sauté',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Sizzling tabletop skillet filled with tender turmeric catfish chunks, heaps of fresh dill, scallions, and frothy shrimp paste.',
+          vibe: 'French colonial villa setting • Quiet and dignified',
+          rating: '4.6 / 5.0 (5,400+ reviews)', price: '160,000 - 200,000 VND (~¥46-58)',
+          mapQuery: '19+Duong+Thanh+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-03', rank: '03', name: 'Phở 10 Lý Quốc Sư',
+          dishVi: 'Phở bắp gầu giòn', dishZh: '爽脆牛腱牛胸肉米粉',
+          address: '10 Lý Quốc Sư, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Cathedral Quarter (Hoàn Kiếm)',
+          note: 'Premium cuts of crunchy flank and brisket. Deep, aromatic broth spiced with roasted star anise and black cardamom.',
+          vibe: 'Clean, air-conditioned • Right by St. Joseph Cathedral',
+          rating: '4.5 / 5.0 (8,200+ reviews)', price: '70,000 - 110,000 VND (~¥20-32)',
+          mapQuery: '10+Ly+Quoc+Su+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-04', rank: '04', name: 'Bún Đậu Ngõ Tráng Tiền',
+          dishVi: 'Bún đậu thập cẩm', dishZh: '酥炸金黄豆腐拼香炸绿米肉饼',
+          address: 'Số 1 Ngõ Tráng Tiền, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'French Quarter (Hoàn Kiếm)',
+          note: 'Tucked inside a razor-thin alley behind the Hanoi Opera House. Golden crispy tofu puffs and fragrant young green rice patties.',
+          vibe: 'Atmospheric alleyway lunch • Pure local pulse',
+          rating: '4.5 / 5.0 (2,700+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '1+Ngo+Trang+Tien+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-05', rank: '05', name: 'Bún Chả Ta',
+          dishVi: 'Bún chả nướng + Nem cua bể', dishZh: '炭烤猪肉米线配香草醋汁 + 脆皮蟹肉春卷',
+          address: '21 Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội', category: 'mains', categoryLabel: 'Charcoal Grills',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Pork patties and belly slices charred over red coals. Served with crisp crab spring rolls and gentle, warming fish sauce broth.',
+          vibe: 'Refined rustic interiors • Solo-friendly service',
+          rating: '4.6 / 5.0 (3,600+ reviews)', price: '80,000 - 130,000 VND (~¥23-38)',
+          mapQuery: '21+Nguyen+Huu+Huan+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-06', rank: '06', name: 'Bún Chả Hàng Quạt',
+          dishVi: 'Bún chả miếng than hoa', dishZh: '炭烤焦香五花肉米线',
+          address: 'Ngõ 74 Hàng Quạt, Hoàn Kiếm, Hà Nội', category: 'mains', categoryLabel: 'Charcoal Grills',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Deep inside alley 74. Smoky, caramelized pork slices steeped in sweet-tart dipping sauce with pickled green papaya.',
+          vibe: 'Classic Old Quarter corridor • Smoky and intense',
+          rating: '4.5 / 5.0 (1,900+ reviews)', price: '40,000 - 55,000 VND (~¥12-16)',
+          mapQuery: '74+Hang+Quat+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-07', rank: '07', name: 'Bánh Mì 25',
+          dishVi: 'Bánh mì pate thập cẩm', dishZh: '特浓肝酱多层肉法棍面包',
+          address: '25 Hàng Cá, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Airy, shatteringly crisp baguette layered with savory liver pâté, Vietnamese mortadella, jambon, and tangy pickled daikon.',
+          vibe: 'Chic indie sandwich kiosk • Quick grab-and-go',
+          rating: '4.6 / 5.0 (13,000+ reviews)', price: '35,000 - 45,000 VND (~¥10-13)',
+          mapQuery: '25+Hang+Ca+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-08', rank: '08', name: 'Bún Bò Huế O Xuân',
+          dishVi: 'Bún bò đặc biệt chả cua', dishZh: '顺化香茅辣牛肉米线配鲜蟹肉丸',
+          address: '5D Quang Trung, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Hoàn Kiếm Central',
+          note: 'Robust lemongrass and shrimp paste broth brimming with springy handmade crab balls, beef shank, and braised pork knuckle.',
+          vibe: 'High-ceiling colonial street vibe • Dynamic & hearty',
+          rating: '4.3 / 5.0 (4,100+ reviews)', price: '60,000 - 80,000 VND (~¥17-23)',
+          mapQuery: '5D+Quang+Trung+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-09', rank: '09', name: 'Bánh Cuốn Thanh Vân',
+          dishVi: 'Bánh cuốn thịt cà cuống', dishZh: '现蒸丝滑猪肉卷粉配水生香精',
+          address: '12 - 14 Hàng Gà, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Steamed Delicate',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Silken freshly steamed rice sheets rolled with minced pork and wood-ear mushrooms, finished with aromatic drop of water-bug essence.',
+          vibe: 'Glass-front live steaming counter • Rapid service',
+          rating: '4.3 / 5.0 (2,400+ reviews)', price: '40,000 - 65,000 VND (~¥12-19)',
+          mapQuery: '14+Hang+Ga+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-10', rank: '10', name: 'Xôi Yến',
+          dishVi: 'Xôi xéo thịt kho tàu', dishZh: '鸡油绿豆黄姜糯米饭配卤肉',
+          address: '35B Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội', category: 'mains', categoryLabel: 'Sticky Rice & Comfort',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Golden turmeric glutinous rice glistening with shallot chicken fat, shaved mung bean puree, and tender braised caramelized pork.',
+          vibe: 'Three-story street corner powerhouse • Rich & filling',
+          rating: '4.2 / 5.0 (5,300+ reviews)', price: '45,000 - 75,000 VND (~¥13-22)',
+          mapQuery: '35B+Nguyen+Huu+Huan+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-11', rank: '11', name: 'Bún Thang Bà Đức',
+          dishVi: 'Bún thang tinh dầu cà cuống', dishZh: '河内传统鸡丝蛋皮细丝清汤米线',
+          address: '48 Cầu Gỗ, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'The pinnacle of Hanoi refined culinary geometry: julienned free-range chicken, egg ribbons, pork roll, and delicate shrimp broth.',
+          vibe: 'Quiet Old Quarter alley sanctuary • Aesthetic presentation',
+          rating: '4.3 / 5.0 (1,600+ reviews)', price: '50,000 - 65,000 VND (~¥14-19)',
+          mapQuery: '48+Cau+Go+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-12', rank: '12', name: 'Miến Lươn Đông Thịnh',
+          dishVi: 'Miến lươn trộn giòn', dishZh: '酥炸黄鳝干拌粉丝',
+          address: '87 Hàng Điếu, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Glass Noodles & Seafood',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Crispy fried swamp eels tossed with chewy glass noodles, fresh Vietnamese coriander, fried shallots, and sweet-tangy soy dressing.',
+          vibe: 'Heritage specialty store • Distinct texture profile',
+          rating: '4.4 / 5.0 (2,200+ reviews)', price: '55,000 - 75,000 VND (~¥16-22)',
+          mapQuery: '87+Hang+Dieu+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-13', rank: '13', name: 'Mỳ Gà Tần Hàng Bồ',
+          dishVi: 'Mỳ tôm gà tần ngải cứu', dishZh: '黑药膳艾草炖乌鸡方便面',
+          address: '24 Hàng Bồ, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Late Night Herbal',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Fall-off-the-bone black chicken slow-simmered in medicinal herbs and fresh mugwort leaves, served over instant noodles on low plastic stools.',
+          vibe: 'Sidewalk night seating • Deeply restorative broth',
+          rating: '4.3 / 5.0 (1,200+ reviews)', price: '55,000 - 85,000 VND (~¥16-25)',
+          mapQuery: '24+Hang+Bo+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-14', rank: '14', name: 'Nộm Bò Khô Long Vi Dung',
+          dishVi: 'Nộm bò khô đặc biệt', dishZh: '青木瓜干牛肉丝凉拌沙拉',
+          address: '23 Hồ Hoàn Kiếm, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Hoàn Kiếm Lakeside',
+          note: 'Paper-thin shredded green papaya topped with chewy sweet-savory beef jerky, roasted peanuts, and spicy sweet vinegar dressing.',
+          vibe: 'Right by Sword Lake • Lively open-air snacking',
+          rating: '4.3 / 5.0 (3,100+ reviews)', price: '40,000 - 55,000 VND (~¥12-16)',
+          mapQuery: '23+Ho+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-15', rank: '15', name: 'Bún Riêu Cua Sườn Hàng Bạc',
+          dishVi: 'Bún riêu cua giò tai tóp mỡ', dishZh: '酸汤红汤田蟹猪耳卷米线配猪油渣',
+          address: '11 Hàng Bạc, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Tangy fermented rice-vinegar and ripe tomato broth with fluffy river crab paste, pork ribs, and crunchy golden lard cracklings.',
+          vibe: 'Narrow street bench • Steam rising into alley air',
+          rating: '4.4 / 5.0 (1,500+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '11+Hang+Bac+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-16', rank: '16', name: 'Cháo Sườn Ngõ Huyện',
+          dishVi: 'Cháo sườn sụn ruốc quẩy', dishZh: '丝滑米糊猪软骨粥配肉松油条',
+          address: 'Đầu ngõ 43 Ngõ Huyện, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Comfort Porridge',
+          district: 'Cathedral Quarter (Hoàn Kiếm)',
+          note: 'Smooth, velvet-like ground rice congee topped with tender pork cartilage, savory meat floss, and fresh crispy fried crullers.',
+          vibe: 'Alley mouth gathering • Perfect afternoon pick-me-up',
+          rating: '4.4 / 5.0 (2,100+ reviews)', price: '30,000 - 45,000 VND (~¥9-13)',
+          mapQuery: '43+Ngo+Huyen+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-17', rank: '17', name: 'Bánh Xèo Sáu Phước',
+          dishVi: 'Bánh xèo miền Trung + Nem lụi', dishZh: '香脆海鲜姜黄煎饼配炭烤肉串',
+          address: '74 Cầu Đất, Hoàn Kiếm, Hà Nội', category: 'mains', categoryLabel: 'Street & Alleyways',
+          district: 'Hoàn Kiếm Outskirts',
+          note: 'Central-style crisp turmeric crepes stuffed with shrimp and pork, rolled into rice paper with fragrant herbs and rich peanut-liver dip.',
+          vibe: 'Cozy neighbourhood joint • Crunchy and satisfying',
+          rating: '4.5 / 5.0 (980+ reviews)', price: '50,000 - 80,000 VND (~¥14-23)',
+          mapQuery: '74+Cau+Dat+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-18', rank: '18', name: 'Chè Bốn Mùa',
+          dishVi: 'Chè sen nhãn dừa', dishZh: '冰镇鲜百合龙眼莲子糖水',
+          address: '4 Hàng Cân, Hoàn Kiếm, Hà Nội', category: 'dessert', categoryLabel: 'Desserts & Sweets',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Heritage dessert parlour since the 1970s. Understated, refreshing sweetness with tender simmered lotus seeds and juicy longan fruit.',
+          vibe: 'Historic retro storefront • Calming sweet respite',
+          rating: '4.4 / 5.0 (3,500+ reviews)', price: '25,000 - 35,000 VND (~¥7-10)',
+          mapQuery: '4+Hang+Can+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-19', rank: '19', name: 'Cafe Giảng',
+          dishVi: 'Cà phê trứng nóng', dishZh: '丝滑热蛋黄咖啡',
+          address: '39 Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội', category: 'dessert', categoryLabel: 'Coffee & Cafe Culture',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Birthplace of egg coffee (since 1946). Decadent, custard-like whipped yolk foam resting atop concentrated dark Robusta brew.',
+          vibe: 'Narrow entry into skylit courtyard • Unmissable legacy',
+          rating: '4.6 / 5.0 (12,800+ reviews)', price: '35,000 - 45,000 VND (~¥10-13)',
+          mapQuery: '39+Nguyen+Huu+Huan+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-20', rank: '20', name: 'Phở Gánh Hàng Chiếu',
+          dishVi: 'Phở bò sốt vang gánh đêm', dishZh: '深夜扁担红酒炖牛肉米粉',
+          address: 'Ngã 4 Hàng Chiếu - Hàng Đường, Hoàn Kiếm', category: 'noodles', categoryLabel: 'Late Night Herbal',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Atmospheric midnight street stall. Deep ruby red-wine stewed beef brisket broth infused with cinnamon and star anise.',
+          vibe: 'Operates 11:30 PM - 3:00 AM • Surreal night street scene',
+          rating: '4.2 / 5.0 (1,800+ reviews)', price: '50,000 - 65,000 VND (~¥14-19)',
+          mapQuery: 'Hang+Chieu+Hang+Duong+Hanoi'
+        },
+        {
+          id: 'hn-21', rank: '21', name: 'Bún Chả Hương Liên (Obama)',
+          dishVi: 'Bún chả đặc biệt + Nem hải sản', dishZh: '奥巴马套餐炭烤肉米线 + 海鲜炸春卷',
+          address: '24 Lê Văn Hưu, Hai Bà Trưng, Hà Nội', category: 'mains', categoryLabel: 'Charcoal Grills',
+          district: 'Hai Bà Trưng',
+          note: 'Famous presidential stopover. Generous bowls of charcoal pork patties in dipping broth with giant crispy seafood rolls.',
+          vibe: 'Iconic multi-story venue • Bustling and energetic',
+          rating: '4.4 / 5.0 (14,200+ reviews)', price: '60,000 - 120,000 VND (~¥17-35)',
+          mapQuery: '24+Le+Van+Huu+Hai+Ba+Trung+Hanoi'
+        },
+        {
+          id: 'hn-22', rank: '22', name: 'Phở Thìn Lò Đúc',
+          dishVi: 'Phở bò tái lăn', dishZh: '葱油大火爆炒生牛肉粉',
+          address: '13 Lò Đúc, Hai Bà Trưng, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Hai Bà Trưng',
+          note: 'Flash-seared garlicky beef over high flame, submerged in intensely rich bone broth covered with a forest of chopped scallions.',
+          vibe: 'Raw industrial charm • Big flavors for big appetites',
+          rating: '4.2 / 5.0 (7,100+ reviews)', price: '70,000 - 90,000 VND (~¥20-26)',
+          mapQuery: '13+Lo+Duc+Hai+Ba+Trung+Hanoi'
+        },
+        {
+          id: 'hn-23', rank: '23', name: 'Bánh Mì Chảo Cột Điện Quán',
+          dishVi: 'Chảo thập cẩm pate trứng sốt tiêu', dishZh: '铁板黑椒汁煎蛋肝酱法棍',
+          address: '71 Đặng Văn Ngữ, Đống Đa, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Đống Đa',
+          note: 'Sizzling personal cast-iron pan with fried eggs, pâté, sausages, and thick sweet-savory black pepper sauce to dip warm baguettes.',
+          vibe: 'Youthful university district favorite • Savory comfort',
+          rating: '4.4 / 5.0 (2,900+ reviews)', price: '40,000 - 60,000 VND (~¥12-17)',
+          mapQuery: '71+Dang+Van+Ngu+Dong+Da+Hanoi'
+        },
+        {
+          id: 'hn-24', rank: '24', name: 'Bún Đậu Cây Đa Thụy Khuê',
+          dishVi: 'Bún đậu dồi rán lòng non', dishZh: '西湖老树下炸豆腐香肠米线',
+          address: '235B Thụy Khuê, Tây Hồ, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Tây Hồ (West Lake)',
+          note: 'Set beneath ancient banyan trees near West Lake. Crisp fried pork intestines, savory blood sausage, and silky Mơ village tofu.',
+          vibe: 'Breezy open street tables • Hearty local portioning',
+          rating: '4.3 / 5.0 (2,100+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '235B+Thuy+Khue+Tay+Ho+Hanoi'
+        },
+        {
+          id: 'hn-25', rank: '25', name: 'Bánh Tôm Hồ Tây',
+          dishVi: 'Bánh tôm chiên giòn', dishZh: '西湖红薯鲜虾脆饼',
+          address: '1 Thanh Niên, Tây Hồ, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Tây Hồ (West Lake)',
+          note: 'Whole freshwater West Lake prawns nestled in crispy julienned sweet potato batter, served with sour green papaya salad.',
+          vibe: 'Scenic location overlooking the lake causeway',
+          rating: '4.1 / 5.0 (3,800+ reviews)', price: '80,000 - 150,000 VND (~¥23-43)',
+          mapQuery: '1+Thanh+Nien+Tay+Ho+Hanoi'
+        },
+        {
+          id: 'hn-26', rank: '26', name: 'Vịt Nướng Vân Đình Nhung Hiền',
+          dishVi: 'Vịt nướng than hoa', dishZh: '炭烤云亭土鸭配蒜蓉辣酱',
+          address: '43 Nguyễn Khang, Cầu Giấy, Hà Nội', category: 'mains', categoryLabel: 'Charcoal Grills',
+          district: 'Cầu Giấy',
+          note: 'Van Dinh pasture-raised duck roasted over charcoal embers until the skin glistens with spice glaze while meat stays succulent.',
+          vibe: 'Energetic roadside dinner spot • Great with cold bia hơi',
+          rating: '4.3 / 5.0 (1,300+ reviews)', price: '120,000 - 180,000 VND (~¥35-52)',
+          mapQuery: '43+Nguyen+Khang+Cau+Giay+Hanoi'
+        },
+        {
+          id: 'hn-27', rank: '27', name: 'Bún Cá Cay Hải Phòng',
+          dishVi: 'Bún cá rô chiên giòn', dishZh: '海防风味香辣脆皮鱼排米线',
+          address: 'Ngõ 106 Hoàng Quốc Việt, Cầu Giấy, Hà Nội', category: 'noodles', categoryLabel: 'Glass Noodles & Seafood',
+          district: 'Cầu Giấy',
+          note: 'Spicy, tart broth simmered from sea fish bones, topped with deep-fried crunchy perch fillets and taro stems.',
+          vibe: 'Spicy coastal punch • Perfect rainy-day meal',
+          rating: '4.4 / 5.0 (1,100+ reviews)', price: '40,000 - 55,000 VND (~¥12-16)',
+          mapQuery: 'Ngo+106+Hoang+Quoc+Viet+Cau+Giay+Hanoi'
+        },
+        {
+          id: 'hn-28', rank: '28', name: 'Phở Gà Nguyệt',
+          dishVi: 'Phở đùi gà trộn', dishZh: '金黄脆皮鸡腿干拌米粉',
+          address: '5B Phủ Doãn, Hoàn Kiếm, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Hoàn Kiếm Boundary',
+          note: 'Dry tossed phở topped with tender yellow-skin chicken thigh slices, fried shallots, roasted peanuts, and sweet garlic soy glaze.',
+          vibe: 'Michelin Bib Gourmand awardee • Fast-paced efficiency',
+          rating: '4.5 / 5.0 (2,600+ reviews)', price: '50,000 - 75,000 VND (~¥14-22)',
+          mapQuery: '5B+Phu+Doan+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-29', rank: '29', name: 'Bánh Cuốn Bà Xuân',
+          dishVi: 'Bánh cuốn chả quế trứng trần', dishZh: '古树坡现蒸肉卷粉配温泉蛋',
+          address: '16 Dốc Hòe Nhai, Ba Đình, Hà Nội', category: 'snacks', categoryLabel: 'Steamed Delicate',
+          district: 'Ba Đình',
+          note: 'Silky steamed crepes paired with cinnamon pork patties and steamed soft-poached egg bathed in warm dipping broth.',
+          vibe: 'Tree-lined slope neighbourhood • Historic local secret',
+          rating: '4.4 / 5.0 (1,400+ reviews)', price: '35,000 - 50,000 VND (~¥10-15)',
+          mapQuery: '16+Doc+Hoe+Nhai+Ba+Dinh+Hanoi'
+        },
+        {
+          id: 'hn-30', rank: '30', name: 'Bò Nướng Gầm Cầu',
+          dishVi: 'Bò nướng bơ chảo gang', dishZh: '铁路铁桥下铁板黄油烤牛肉',
+          address: 'Phố Gầm Cầu, Hoàn Kiếm/Ba Đình, Hà Nội', category: 'mains', categoryLabel: 'Charcoal Grills',
+          district: 'Under Long Bien Rail Bridge',
+          note: 'Sizzling beef and pork udder seared in margarine over tabletop portable gas stoves right below the French-era train viaduct.',
+          vibe: 'Raw industrial grit • Rumble of passing trains overhead',
+          rating: '4.2 / 5.0 (1,800+ reviews)', price: '100,000 - 160,000 VND (~¥29-46)',
+          mapQuery: 'Pho+Gam+Cau+Hanoi'
+        },
+        {
+          id: 'hn-31', rank: '31', name: 'Bún Riêu Cua Tuấn Tèo',
+          dishVi: 'Bún riêu bắp bò tóp mỡ', dishZh: '酸汤田蟹肥牛片猪油渣米线',
+          address: '47 Tuệ Tĩnh, Hai Bà Trưng, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Hai Bà Trưng',
+          note: 'Generous portions of tender beef shank submerged in deeply sour, aromatic rice-vinegar crab soup with crunchy fried shallots.',
+          vibe: 'Trendy urban noodle spot • Vibrant daytime crowd',
+          rating: '4.4 / 5.0 (1,150+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '47+Tue+Tinh+Hai+Ba+Trung+Hanoi'
+        },
+        {
+          id: 'hn-32', rank: '32', name: 'Xôi Mây Vọng Đức',
+          dishVi: 'Xôi xéo mỡ hành ruốc thịt', dishZh: '芭蕉叶包黄姜油葱肉松糯米饭',
+          address: '35 Lý Thường Kiệt / Góc Vọng Đức, Hoàn Kiếm', category: 'mains', categoryLabel: 'Sticky Rice & Comfort',
+          district: 'French Quarter (Hoàn Kiếm)',
+          note: 'Morning-only street sidewalk stall. Steaming sticky rice wrapped in banana leaves with hand-shaved mung bean and pork floss.',
+          vibe: 'Open 6:00 AM - 9:30 AM • Hanoi morning ritual',
+          rating: '4.6 / 5.0 (1,900+ reviews)', price: '20,000 - 35,000 VND (~¥6-10)',
+          mapQuery: '35+Ly+Thuong+Kiet+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-33', rank: '33', name: 'Lòng Rán Nhất Quán',
+          dishVi: 'Lòng rán giòn chấm mắm tôm', dishZh: '香脆炸猪杂拼虾酱',
+          address: '23 Nguyễn Siêu, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Golden deep-fried pork chitterlings, crispy sausage, and stomach tossed with aromatic basil and spicy fermented shrimp dip.',
+          vibe: 'Bustling pub atmosphere • Classic local beer pairing',
+          rating: '4.3 / 5.0 (1,700+ reviews)', price: '80,000 - 130,000 VND (~¥23-38)',
+          mapQuery: '23+Nguyen+Sieu+Hoan+Kiem+Hanoi'
+        },
+        {
+          id: 'hn-34', rank: '34', name: 'Lẩu Ếch Bà Ba Béo',
+          dishVi: 'Lẩu ếch măng cay', dishZh: '金马酸辣泡笋爆炒田鸡火锅',
+          address: '30 Ngõ 371 Kim Mã, Ba Đình, Hà Nội', category: 'hotpot', categoryLabel: 'Hotpot & Specialties',
+          district: 'Ba Đình',
+          note: 'Tender frog legs wok-tossed with sour bamboo shoots and wild betel leaves, dunked into hot sweet-sour broth.',
+          vibe: 'Concealed in deep alleyway • Spicy and heartwarming',
+          rating: '4.3 / 5.0 (1,450+ reviews)', price: '150,000 - 220,000 VND (~¥43-64)',
+          mapQuery: '30+Ngo+371+Kim+Ma+Ba+Dinh+Hanoi'
+        },
+        {
+          id: 'hn-35', rank: '35', name: 'Bún Bò Ngự Uyển',
+          dishVi: 'Bún bò nạm gân móng giò', dishZh: '皇家风味牛腱牛筋猪蹄米线',
+          address: '32 Kim Mã, Ba Đình, Hà Nội', category: 'noodles', categoryLabel: 'Phở & Heritage Broth',
+          district: 'Ba Đình',
+          note: 'Imperial Hue recipe with aromatic lemongrass, tendon, and tender shank cuts, served in a spacious dining hall.',
+          vibe: 'Comfortable air-conditioned respite • Reliable quality',
+          rating: '4.3 / 5.0 (1,100+ reviews)', price: '50,000 - 70,000 VND (~¥14-20)',
+          mapQuery: '32+Kim+Ma+Ba+Dinh+Hanoi'
+        },
+        {
+          id: 'hn-36', rank: '36', name: 'Cháo Lòng Bà Tiền',
+          dishVi: 'Cháo lòng dồi luộc', dishZh: '传统猪血红粥拼老派生滚猪杂',
+          address: '18 Ngõ 18 Võ Văn Dũng, Đống Đa, Hà Nội', category: 'snacks', categoryLabel: 'Comfort Porridge',
+          district: 'Đống Đa',
+          note: 'Rich dark blood pudding congee cooked with toasted rice kernels, served alongside a platter of freshly boiled offal cuts.',
+          vibe: 'Nostalgic residential neighborhood • Deep umami comfort',
+          rating: '4.3 / 5.0 (820+ reviews)', price: '35,000 - 55,000 VND (~¥10-16)',
+          mapQuery: '18+Ngo+18+Vo+Van+Dung+Dong+Da+Hanoi'
+        },
+        {
+          id: 'hn-37', rank: '37', name: 'Bánh Giò Cô Béo Thụy Khuê',
+          dishVi: 'Bánh giò đầy đủ chả cốm', dishZh: '芭蕉叶热蒸猪肉金字塔米糕',
+          address: 'Số 5 Thụy Khuê, Tây Hồ, Hà Nội', category: 'snacks', categoryLabel: 'Steamed Delicate',
+          district: 'Tây Hồ (West Lake)',
+          note: 'Silken pyramid rice dumpling steamed inside banana leaves, stuffed with savory minced pork and wood-ear, topped with green rice sausage.',
+          vibe: 'Sidewalk wooden stool gathering • Very filling snack',
+          rating: '4.4 / 5.0 (2,400+ reviews)', price: '30,000 - 45,000 VND (~¥9-13)',
+          mapQuery: '5+Thuy+Khue+Tay+Ho+Hanoi'
+        },
+        {
+          id: 'hn-38', rank: '38', name: 'Lẩu Riêu Cua Bắp Bò Dũng Béo',
+          dishVi: 'Lẩu riêu cua sườn sụn bắp bò', dishZh: '浓郁田蟹黄酸汤涮牛肉火锅',
+          address: '45 Phó Đức Chính, Ba Đình, Hà Nội', category: 'hotpot', categoryLabel: 'Hotpot & Specialties',
+          district: 'Ba Đình / Truc Bach',
+          note: 'Golden crab roe blanket bubbling over tart tomato broth, paired with shaved raw beef shank, pork cartilage, and water spinach.',
+          vibe: 'Boisterous open-front tavern • Energetic evening scene',
+          rating: '4.4 / 5.0 (2,050+ reviews)', price: '160,000 - 250,000 VND (~¥46-72)',
+          mapQuery: '45+Pho+Duc+Chinh+Ba+Dinh+Hanoi'
+        },
+        {
+          id: 'hn-39', rank: '39', name: 'Nem Chua Rán Tạm Thương',
+          dishVi: 'Nem chua rán giòn lắc phô mai', dishZh: '暗巷传统外酥里糯炸酸肉卷',
+          address: 'Ngõ Tạm Thương, Hàng Gai, Hoàn Kiếm, Hà Nội', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Old Quarter (Hoàn Kiếm)',
+          note: 'Famous youth alley hideout. Sticky, chewy fried cured pork rolls served hot on greaseproof trays with spicy chili paste.',
+          vibe: 'Vibrant teen & youth corridor • Fun afternoon detour',
+          rating: '4.3 / 5.0 (2,900+ reviews)', price: '40,000 - 70,000 VND (~¥12-20)',
+          mapQuery: 'Ngo+Tam+Thuong+Hang+Gai+Hanoi'
+        },
+        {
+          id: 'hn-40', rank: '40', name: 'Caramen Dương Hoa',
+          dishVi: 'Caramen thạch cốt dừa', dishZh: '老街手制焦糖布丁配椰浆仙草',
+          address: '29 Hàng Than, Ba Đình, Hà Nội', category: 'dessert', categoryLabel: 'Desserts & Sweets',
+          district: 'Ba Đình',
+          note: 'Silken egg flan infused with dark bitter caramel sauce, floating in fresh coconut cream with black grass jelly and boba pearls.',
+          vibe: 'Classic dessert street parlor • Smooth & lightly sweet',
+          rating: '4.4 / 5.0 (3,100+ reviews)', price: '20,000 - 35,000 VND (~¥6-10)',
+          mapQuery: '29+Hang+Than+Ba+Dinh+Hanoi'
+        }
+      ],
+      saigon: [
+        {
+          id: 'sg-01', rank: '01', name: 'Bánh Mì Huỳnh Hoa',
+          dishVi: 'Bánh mì pate thập cẩm đặc biệt', dishZh: '特浓法式肝酱重肉法棍',
+          address: '26 - 32 Lê Thị Riêng, P. Bến Thành, Q.1, TP.HCM', category: 'snacks', categoryLabel: 'Baguettes & Rolls',
+          district: 'District 1 (Bến Thành)',
+          note: 'The heavyweight titan of Saigon street food. A half-kilo baguette packed with 6 layers of cold cuts, house-made mayo, and rich liver pâté.',
+          vibe: 'High-speed assembly line • Famous worldwide',
+          rating: '4.4 / 5.0 (8,600+ reviews)', price: '68,000 VND (~¥20)',
+          mapQuery: '26+Le+Thi+Rieng+Ben+Thanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-02', rank: '02', name: 'Cơm Tấm Thuận Kiều',
+          dishVi: 'Cơm tấm sườn bì chả ốp la', dishZh: '炭烤厚切猪排肉皮蒸肉饼碎米饭',
+          address: '114 Yersin, P. Nguyễn Thái Bình, Q.1, TP.HCM', category: 'mains', categoryLabel: 'Broken Rice & Grills',
+          district: 'District 1 (Nguyễn Thái Bình)',
+          note: 'Thick, honey-marinated pork chop grilled over open charcoal coals, served over broken rice grains with steamed egg meatloaf.',
+          vibe: 'Heritage brand since 1970 • Classic southern comfort',
+          rating: '4.2 / 5.0 (3,400+ reviews)', price: '65,000 - 110,000 VND (~¥19-32)',
+          mapQuery: '114+Yersin+Nguyen+Thai+Binh+District+1+HCMC'
+        },
+        {
+          id: 'sg-03', rank: '03', name: 'Quán Ăn Ngon',
+          dishVi: 'Bánh xèo tép nhảy + Gỏi cuốn', dishZh: '姜黄脆皮鲜虾大煎饼 + 水晶鲜虾生卷',
+          address: '160 Pasteur, P. Bến Nghé, Q.1, TP.HCM', category: 'mains', categoryLabel: 'Regional Classics',
+          district: 'District 1 (Bến Nghé)',
+          note: 'Pristine colonial villa hosting open street-food demonstration stations. Crisp turmeric crepes packed with shrimp and bean sprouts.',
+          vibe: 'Lush Indochine courtyard • High aesthetic decorum',
+          rating: '4.4 / 5.0 (6,200+ reviews)', price: '90,000 - 180,000 VND (~¥26-52)',
+          mapQuery: '160+Pasteur+Ben+Nghe+District+1+HCMC'
+        },
+        {
+          id: 'sg-04', rank: '04', name: 'Phở Hòa Pasteur',
+          dishVi: 'Phở bò thập cẩm đặc biệt', dishZh: '南越西贡浓香牛杂生熟牛肉粉',
+          address: '260C Pasteur, P. Võ Thị Sáu, Q.3, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 3 Bordering D1',
+          note: 'Rich, sweeter southern-style broth served with mountain-high baskets of fresh saw-leaf herb, Thai basil, and bean sprouts.',
+          vibe: 'Generations of culinary pedigree • Spiced & aromatic',
+          rating: '4.3 / 5.0 (5,700+ reviews)', price: '85,000 - 105,000 VND (~¥25-30)',
+          mapQuery: '260C+Pasteur+District+3+HCMC'
+        },
+        {
+          id: 'sg-05', rank: '05', name: 'Bún Thịt Nướng Chị Tuyền',
+          dishVi: 'Bún thịt nướng chả giò bò lá lốt', dishZh: '炭烤肉片香炸春卷蒌叶牛肉烤串拌米线',
+          address: '175 Cô Giang, P. Cô Giang, Q.1, TP.HCM', category: 'noodles', categoryLabel: 'Dry Tossed Noodles',
+          district: 'District 1 (Cô Giang)',
+          note: 'Warm rice noodles topped with scallion-oil glazed grilled pork, wild betel leaf beef rolls, and shatteringly crisp egg rolls.',
+          vibe: 'Bustling corner shophouse • Generous hearty bowls',
+          rating: '4.5 / 5.0 (3,800+ reviews)', price: '65,000 - 85,000 VND (~¥19-25)',
+          mapQuery: '175+Co+Giang+District+1+HCMC'
+        },
+        {
+          id: 'sg-06', rank: '06', name: 'Ốc Đào',
+          dishVi: 'Ốc hương xào bơ tỏi', dishZh: '蒜蓉牛油炒东风香螺配法棍',
+          address: 'Hẻm 212B Nguyễn Trãi, P. Cầu Ông Lãnh, Q.1', category: 'snacks', categoryLabel: 'Seafood & Street Shells',
+          district: 'District 1 (Alley 212B)',
+          note: 'Tucked inside a deep residential alley. Fragrant sweet sea snails stir-fried in rich garlic butter sauce, dipped with hot baguettes.',
+          vibe: 'High-octane alleyway seafood dining • Flavorful energy',
+          rating: '4.3 / 5.0 (4,600+ reviews)', price: '100,000 - 200,000 VND (~¥29-58)',
+          mapQuery: '212B+Nguyen+Trai+District+1+HCMC'
+        },
+        {
+          id: 'sg-07', rank: '07', name: 'Bánh Canh Cua 87 Trần Khắc Chân',
+          dishVi: 'Bánh canh cua tôm chả', dishZh: '浓郁海鲜蟹肉粗圆米粉',
+          address: '87 Trần Khắc Chân, P. Tân Định, Q.1, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 1 (Tân Định)',
+          note: 'Viscous, orange-hued broth brewed from whole crabs, poured over chewy tapioca noodles, crab meat, blood pudding, and quail eggs.',
+          vibe: 'Fast, focused sidewalk institution • Rich seafood aroma',
+          rating: '4.3 / 5.0 (2,900+ reviews)', price: '50,000 - 65,000 VND (~¥14-19)',
+          mapQuery: '87+Tran+Khac+Chan+District+1+HCMC'
+        },
+        {
+          id: 'sg-08', rank: '08', name: 'Lẩu Mắm Bà Dú',
+          dishVi: 'Lẩu mắm hải sản rau đồng', dishZh: '湄公河三角洲发酵鱼露海鲜野菜火锅',
+          address: '19 Cao Thắng, Q.1 / Q.3 Border, TP.HCM', category: 'hotpot', categoryLabel: 'Hotpot & Specialties',
+          district: 'District 1 / 3 Junction',
+          note: 'Pungent, deeply savory Mekong Delta fermented fish hotpot with squid, river fish, and self-serve buffet of wild edible water flowers.',
+          vibe: 'Clean indoor restaurant • Authentic delta heritage',
+          rating: '4.2 / 5.0 (2,100+ reviews)', price: '180,000 - 260,000 VND (~¥52-75)',
+          mapQuery: '19+Cao+Thang+District+3+HCMC'
+        },
+        {
+          id: 'sg-09', rank: '09', name: 'Phở Việt Nam (Phở Bát Đá)',
+          dishVi: 'Phở bò bát đá sôi', dishZh: '滚烫石锅慢炖牛腩生牛肉粉',
+          address: '66 Trần Quốc Toản, P. Võ Thị Sáu, Q.3, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 3 Bordering D1',
+          note: 'Boiling broth served in an intensely hot granite stone bowl. Drop in paper-thin raw American beef slices and fresh noodles tableside.',
+          vibe: 'Modern upscale dining room • Dramatic boiling presentation',
+          rating: '4.4 / 5.0 (3,200+ reviews)', price: '95,000 - 150,000 VND (~¥28-43)',
+          mapQuery: '66+Tran+Quoc+Toan+District+3+HCMC'
+        },
+        {
+          id: 'sg-10', rank: '10', name: 'Bò Né Dì Nữ',
+          dishVi: 'Bò né thập cẩm xèo xèo', dishZh: '铁板黑椒嫩牛排流心煎蛋配肝酱',
+          address: '2 Mạc Đĩnh Chi, P. Bến Nghé, Q.1, TP.HCM', category: 'mains', categoryLabel: 'Sizzling Skillets',
+          district: 'District 1 (Bến Nghé)',
+          note: 'Cast-iron cow-shaped skillet arriving with sizzling tender marinated beef, runny sunny-side egg, and rich pâté to mop up with bread.',
+          vibe: 'Fast energetic morning breakfast • Pure savory hit',
+          rating: '4.3 / 5.0 (1,800+ reviews)', price: '45,000 - 70,000 VND (~¥13-20)',
+          mapQuery: '2+Mac+Dinh+Chi+Ben+Nghe+District+1+HCMC'
+        },
+        {
+          id: 'sg-11', rank: '11', name: 'Bún Riêu Chợ Bến Thành (Bún Riêu Gánh)',
+          dishVi: 'Bún riêu cua giò heo huyết', dishZh: '滨城市场老摊田蟹猪脚血块酸汤粉',
+          address: '4 Phan Bội Châu, P. Bến Thành, Q.1, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 1 (Bến Thành Market)',
+          note: 'Decades of history right outside the East Gate of Ben Thanh. Fluffy crab roe cakes, tender pork knuckle, and tamarind-sweet broth.',
+          vibe: 'Market side energy • Quick and punchy',
+          rating: '4.3 / 5.0 (2,400+ reviews)', price: '55,000 - 75,000 VND (~¥16-22)',
+          mapQuery: '4+Phan+Boi+Chau+Ben+Thanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-12', rank: '12', name: 'Xôi Gà Number One',
+          dishVi: 'Xôi gà xé lòng mề mỡ hành', dishZh: '葱油撕鸡肉鸡杂卤汁糯米饭',
+          address: '15 Nguyễn Trung Trực, P. Bến Thành, Q.1', category: 'mains', categoryLabel: 'Broken Rice & Grills',
+          district: 'District 1 (Bến Thành)',
+          note: 'Glossy, tender sticky rice drenched in chicken fat, topped with free-range shredded chicken, giblets, crispy fried shallots, and soy glaze.',
+          vibe: 'Historic kiosk corner • Ideal solo lunch comfort',
+          rating: '4.4 / 5.0 (1,850+ reviews)', price: '40,000 - 65,000 VND (~¥12-19)',
+          mapQuery: '15+Nguyen+Trung+Truc+Ben+Thanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-13', rank: '13', name: 'Cháo Lòng Bà Út',
+          dishVi: 'Cháo lòng dồi chiên 80 năm', dishZh: '八十年老街生滚猪血粥拼香煎香肠',
+          address: '193 Cô Giang, P. Cầu Ông Lãnh, Q.1, TP.HCM', category: 'snacks', categoryLabel: 'Comfort Porridge',
+          district: 'District 1 (Cô Giang)',
+          note: '80 years of family mastery. Coarsely toasted rice congee simmered with herbal spices, paired with crispy pan-fried herb sausage.',
+          vibe: 'Heritage street institution • Authentic old Saigon soul',
+          rating: '4.3 / 5.0 (1,400+ reviews)', price: '40,000 - 60,000 VND (~¥12-17)',
+          mapQuery: '193+Co+Giang+Cau+Ong+Lanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-14', rank: '14', name: 'Phá Lấu Bò Cô Thảo',
+          dishVi: 'Phá lấu bò nước cốt dừa', dishZh: '椰浆咖喱慢炖牛杂配蘸酱法棍',
+          address: '243/29G Nguyễn Cảnh Chân, P. Cầu Kho, Q.1', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'District 1 (Cầu Kho Alley)',
+          note: 'Tender beef honeycomb tripe, tendon, and lung slow-braised in creamy spiced coconut curry broth with a zesty tamarind dipping sauce.',
+          vibe: 'Deep alleyway wooden benches • Quintessential Saigon youth snack',
+          rating: '4.3 / 5.0 (2,200+ reviews)', price: '35,000 - 55,000 VND (~¥10-16)',
+          mapQuery: '243+Nguyen+Canh+Chan+Cau+Kho+District+1+HCMC'
+        },
+        {
+          id: 'sg-15', rank: '15', name: 'Gỏi Cuốn Tôm Thịt Lê Thánh Tôn',
+          dishVi: 'Gỏi cuốn tương đen bơ đậu phộng', dishZh: '经典水晶虾仁五花肉春卷配海鲜花生酱',
+          address: '35 Lê Thánh Tôn, P. Bến Nghé, Q.1, TP.HCM', category: 'snacks', categoryLabel: 'Baguettes & Rolls',
+          district: 'District 1 (Little Tokyo Edge)',
+          note: 'Plump scarlet prawns and tender pork belly wrapped in sheer translucent rice paper, dipped into warm peanut-studded hoisin sauce.',
+          vibe: 'Fast sidewalk afternoon pit-stop • Light and fresh',
+          rating: '4.4 / 5.0 (1,300+ reviews)', price: '20,000 - 35,000 VND (~¥6-10)',
+          mapQuery: '35+Le+Thanh+Ton+Ben+Nghe+District+1+HCMC'
+        },
+        {
+          id: 'sg-16', rank: '16', name: 'Cơm Tấm Bãi Rác',
+          dishVi: 'Cơm tấm sườn nướng chả cua', dishZh: '深夜名摊炭烤蜜汁厚猪排蟹肉蒸蛋碎米饭',
+          address: '77 Lê Văn Linh, P.13, Q.4 (Foot of Calmette Bridge)', category: 'mains', categoryLabel: 'Broken Rice & Grills',
+          district: 'District 4 Bordering D1',
+          note: 'Famous late-night broken rice spot. Premium thick caramelized pork chops glazed with honey, crab-infused egg meatloaf, and fried pork fat cracklings.',
+          vibe: 'Midnight culinary hotspot • Raw local nightlife energy',
+          rating: '4.1 / 5.0 (2,100+ reviews)', price: '70,000 - 120,000 VND (~¥20-35)',
+          mapQuery: '77+Le+Van+Linh+Ward+13+District+4+HCMC'
+        },
+        {
+          id: 'sg-17', rank: '17', name: 'Bún Đậu Cầu Gỗ',
+          dishVi: 'Mẹt bún đậu thập cẩm chả cốm', dishZh: '木托盘金黄炸豆腐绿米肉饼虾酱米线',
+          address: '200 Nguyễn Trãi, P. Phạm Ngũ Lão, Q.1', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'District 1 (Nguyễn Trãi)',
+          note: 'Northern comfort adapted in the south. Puffy fried tofu, green rice nuggets, boiled pork shank, and frothy lime-shrimp paste.',
+          vibe: 'Neat, chilled modern interiors • Solo-friendly trays',
+          rating: '4.3 / 5.0 (1,950+ reviews)', price: '55,000 - 85,000 VND (~¥16-25)',
+          mapQuery: '200+Nguyen+Trai+Pham+Ngu+Lao+District+1+HCMC'
+        },
+        {
+          id: 'sg-18', rank: '18', name: 'Mì Vịt Tiềm Huê Ký',
+          dishVi: 'Mì đùi vịt tiềm da giòn', dishZh: '古法药膳慢炖脆皮鸭腿鸡蛋面',
+          address: '54 Nguyễn Thái Học, P. Cầu Ông Lãnh, Q.1', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 1 (Cầu Ông Lãnh)',
+          note: 'Jumbo duck leg braised in Chinese medicinal herbs, flashed in hot oil for a crispy skin, resting in a deep, sweet aromatic broth.',
+          vibe: 'Chinese-Vietnamese heritage eatery • Substantial portion',
+          rating: '4.3 / 5.0 (1,600+ reviews)', price: '110,000 - 145,000 VND (~¥32-42)',
+          mapQuery: '54+Nguyen+Thai+Hoc+Cau+Ong+Lanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-19', rank: '19', name: 'Bột Chiên Đạt Thành',
+          dishVi: 'Bột chiên 2 trứng đu đủ xanh', dishZh: '铁板双蛋香煎米糕粒配青木瓜丝',
+          address: '277 Cô Giang, P. Cô Giang, Q.1, TP.HCM', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'District 1 (Cô Giang)',
+          note: 'Rice flour cakes fried until crisp on the outside and soft within, tossed with twin eggs and topped with shredded green papaya.',
+          vibe: 'Hypnotic wok-clang street drama • Sweet soy dressing',
+          rating: '4.2 / 5.0 (1,750+ reviews)', price: '35,000 - 50,000 VND (~¥10-15)',
+          mapQuery: '277+Co+Giang+District+1+HCMC'
+        },
+        {
+          id: 'sg-20', rank: '20', name: 'Chè Hà Ký / Chè Cô Giang',
+          dishVi: 'Chè mè đen & hột gà trà', dishZh: '南洋中草药广式黑芝麻糊配红茶煮鸡蛋',
+          address: '85 Cô Giang, P. Cầu Ông Lãnh, Q.1, TP.HCM', category: 'dessert', categoryLabel: 'Desserts & Sweets',
+          district: 'District 1 (Cô Giang)',
+          note: 'Traditional herbal sweet soups, velvety black sesame paste, and tea-simmered herbal eggs to soothe the stomach after a food crawl.',
+          vibe: 'Old-school Cantonese dessert parlor • Calming and warm',
+          rating: '4.3 / 5.0 (1,500+ reviews)', price: '25,000 - 45,000 VND (~¥7-13)',
+          mapQuery: '85+Co+Giang+Cau+Ong+Lanh+District+1+HCMC'
+        },
+        {
+          id: 'sg-21', rank: '21', name: 'Cơm Tấm Ba Ghiền',
+          dishVi: 'Cơm tấm sườn khổng lồ', dishZh: '米其林必比登巨无霸炭烤猪排碎米饭',
+          address: '84 Đặng Văn Ngữ, P.10, Q. Phú Nhuận, TP.HCM', category: 'mains', categoryLabel: 'Broken Rice & Grills',
+          district: 'Phú Nhuận',
+          note: 'Michelin Bib Gourmand legend. The giant charcoal-grilled honey pork chop completely covers the plate, juicy and deeply smoky.',
+          vibe: 'Perpetual plume of aromatic smoke • Unrivaled flagship',
+          rating: '4.3 / 5.0 (6,950+ reviews)', price: '85,000 - 120,000 VND (~¥25-35)',
+          mapQuery: '84+Dang+Van+Ngu+Ward+10+Phu+Nhuan+HCMC'
+        },
+        {
+          id: 'sg-22', rank: '22', name: 'Phở Lệ (Chợ Lớn)',
+          dishVi: 'Phở tái bò viên gân', dishZh: '堤岸五郡鲜牛丸生熟牛肉粉',
+          address: '415 Nguyễn Trãi, P.7, Quận 5, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 5 (Chợ Lớn Chinatown)',
+          note: 'Chinatown landmark. Unbelievably springy tendon beef balls and deeply rich, sweet beef stock flavored with toasted spices.',
+          vibe: 'Classic southern Chinese shophouse • Electric efficiency',
+          rating: '4.5 / 5.0 (8,400+ reviews)', price: '80,000 - 105,000 VND (~¥23-31)',
+          mapQuery: '415+Nguyen+Trai+Ward+7+District+5+HCMC'
+        },
+        {
+          id: 'sg-23', rank: '23', name: 'Sủi Cảo Thiên Thiên',
+          dishVi: 'Sủi cảo tôm mực khô', dishZh: '何东权街浓郁大地鱼干鲜虾水饺汤',
+          address: '197 Hà Tôn Quyền, P.4, Quận 11, TP.HCM', category: 'snacks', categoryLabel: 'Cantonese Dumplings',
+          district: 'District 11 (Dumpling Street)',
+          note: 'Whole plump shrimp wrapped in gossamer skins, served in a deeply umami broth flavored with dried flounder and mustard greens.',
+          vibe: 'Dumpling street epicenter • Lively nighttime buzz',
+          rating: '4.4 / 5.0 (6,100+ reviews)', price: '65,000 - 90,000 VND (~¥19-26)',
+          mapQuery: '197+Ha+Ton+Quyen+Ward+4+District+11+HCMC'
+        },
+        {
+          id: 'sg-24', rank: '24', name: 'Bánh Xèo Thanh Diệu',
+          dishVi: 'Bánh xèo tôm nhảy mực cơm', dishZh: '平定传统瓦炉现跳活虾鲜鱿脆煎饼',
+          address: '164 Nguyễn Thị Nhỏ, P.15, Quận 11, TP.HCM', category: 'mains', categoryLabel: 'Regional Classics',
+          district: 'District 11',
+          note: 'Crispy mini central-coast style pancakes studded with twitching-fresh river prawns and tender baby squid cooked over clay braziers.',
+          vibe: 'Intimate neighborhood gem • Exquisite crunch',
+          rating: '4.4 / 5.0 (1,300+ reviews)', price: '40,000 - 65,000 VND (~¥12-19)',
+          mapQuery: '164+Nguyen+Thi+Nho+Ward+15+District+11+HCMC'
+        },
+        {
+          id: 'sg-25', rank: '25', name: 'Hủ Tiếu Nam Vang Nhân Quán',
+          dishVi: 'Hủ tiếu khô thập cẩm', dishZh: '特调黑甜酱拌金边粿条配海鲜排骨汤',
+          address: '122 Nguyễn Thị Minh Khai, P.6, Quận 3, TP.HCM', category: 'noodles', categoryLabel: 'Dry Tossed Noodles',
+          district: 'District 3',
+          note: 'Dry Phnom Penh-style noodles tossed in sweet caramelized garlic sauce with prawns, quail eggs, pork liver, accompanied by rich bone broth.',
+          vibe: 'Spacious, immaculate air-conditioned room • Pure luxury comfort',
+          rating: '4.3 / 5.0 (3,900+ reviews)', price: '90,000 - 125,000 VND (~¥26-36)',
+          mapQuery: '122+Nguyen+Thi+Minh+Khai+Ward+6+District+3+HCMC'
+        },
+        {
+          id: 'sg-26', rank: '26', name: 'Ốc Oanh (Phố Vĩnh Khánh)',
+          dishVi: 'Ốc hương sốt trứng muối', dishZh: '永庆街金沙咸蛋黄炒香螺配法棍',
+          address: '534 Vĩnh Khánh, P.8, Quận 4, TP.HCM', category: 'snacks', categoryLabel: 'Seafood & Street Shells',
+          district: 'District 4 (Food Street)',
+          note: 'Saigon night street food heaven. Fragrant sea snails drenched in velvety golden salted egg yolk sauce, scooped up with warm crusty baguettes.',
+          vibe: 'High decibel street-side tables • Unrivaled midnight scene',
+          rating: '4.2 / 5.0 (4,200+ reviews)', price: '120,000 - 250,000 VND (~¥35-72)',
+          mapQuery: '534+Vinh+Khanh+Ward+8+District+4+HCMC'
+        },
+        {
+          id: 'sg-27', rank: '27', name: 'Lẩu Bò Nhà Gỗ Sài Gòn',
+          dishVi: 'Lẩu bắp đuôi bò măng chua', dishZh: '大叻木屋风味酸笋牛尾牛腱火锅',
+          address: '162 Lý Thái Tổ, P.1, Quận 3, TP.HCM', category: 'hotpot', categoryLabel: 'Hotpot & Specialties',
+          district: 'District 3',
+          note: 'Da Lat wooden chalet concept. Hearty beef tail and tendon hotpot stewed with sour bamboo shoots and dip-in spicy fermented bean curd.',
+          vibe: 'Bustling multi-floor wooden house • Warm and social',
+          rating: '4.4 / 5.0 (3,100+ reviews)', price: '180,000 - 260,000 VND (~¥52-75)',
+          mapQuery: '162+Ly+Thai+To+Ward+1+District+3+HCMC'
+        },
+        {
+          id: 'sg-28', rank: '28', name: 'Mì Vịt Tiềm Hải Ký',
+          dishVi: 'Mì đùi vịt tiềm chao dầu', dishZh: '百年老字号酥皮药膳鸭腿面',
+          address: '351 Nguyễn Trãi, P.7, Quận 5, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 5 (Chợ Lớn Chinatown)',
+          note: 'Generations of heritage. Spiced duck legs flash-fried then simmered in herbal medicine until tender, served with springy duck egg noodles.',
+          vibe: 'Historic Chinatown stalwart • Rich aromatic air',
+          rating: '4.3 / 5.0 (2,400+ reviews)', price: '115,000 - 150,000 VND (~¥33-43)',
+          mapQuery: '351+Nguyen+Trai+Ward+7+District+5+HCMC'
+        },
+        {
+          id: 'sg-29', rank: '29', name: 'Bún Bò Gánh',
+          dishVi: 'Bún bò bắp hoa chả cua', dishZh: '扁担香茅顺化牛展肉蟹丸粗米线',
+          address: '110 Lý Chính Thắng, P.8, Quận 3, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 3',
+          note: 'Fragrant spicy lemongrass broth laden with marbled beef shank, crab meatballs, and tender tendon over thick rice noodles.',
+          vibe: 'Refined southern courtyard • Clean & relaxing',
+          rating: '4.4 / 5.0 (2,700+ reviews)', price: '65,000 - 95,000 VND (~¥19-28)',
+          mapQuery: '110+Ly+Chinh+Thang+Ward+8+District+3+HCMC'
+        },
+        {
+          id: 'sg-30', rank: '30', name: 'Phá Lấu Bò Chú Ba',
+          dishVi: 'Phá lấu chiên bơ tỏi', dishZh: '蒜香牛油干煎牛杂配脆法棍',
+          address: '22 Đặng Dung, P. Tân Định, Q.1 Bordering Q.3', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'Tân Định Quarter',
+          note: 'Cleanly prepared beef offal sautéed in rich garlic butter until caramelized and crisp, served with hot baguettes and kumquat chili dip.',
+          vibe: 'Cozy sidewalk stall • Incredible aroma',
+          rating: '4.4 / 5.0 (1,300+ reviews)', price: '35,000 - 55,000 VND (~¥10-16)',
+          mapQuery: '22+Dang+Dung+Tan+Dinh+District+1+HCMC'
+        },
+        {
+          id: 'sg-31', rank: '31', name: 'Bánh Bèo Thanh Nga',
+          dishVi: 'Bánh bèo chén tôm cháy', dishZh: '顺化传统小碟米糕配烘烤香虾碎',
+          address: '43 Kỳ Đồng, P.9, Quận 3, TP.HCM', category: 'snacks', categoryLabel: 'Steamed Delicate',
+          district: 'District 3',
+          note: 'Trays of warm steamed rice cakes in tiny ceramic saucers, sprinkled with dehydrated toasted shrimp dust, pork cracklings, and sweet fish sauce.',
+          vibe: 'Quintessential central Vietnamese snacking tray',
+          rating: '4.4 / 5.0 (2,100+ reviews)', price: '40,000 - 65,000 VND (~¥12-19)',
+          mapQuery: '43+Ky+Dong+Ward+9+District+3+HCMC'
+        },
+        {
+          id: 'sg-32', rank: '32', name: 'Lẩu Cá Dân Ích',
+          dishVi: 'Lẩu cù lao than hồng cá diêu hồng', dishZh: '老广东炭火铜锅慢炖鲜鱼杂汤',
+          address: '99 Châu Văn Liêm, P.14, Quận 5, TP.HCM', category: 'hotpot', categoryLabel: 'Hotpot & Specialties',
+          district: 'District 5 (Chợ Lớn Chinatown)',
+          note: 'Vintage charcoal chimney hotpot packed with whole tilapia, handmade fish dumplings, squid, and water spinach in golden savory broth.',
+          vibe: 'Nostalgic 1950s Chinese diner • Glowing red briquettes',
+          rating: '4.2 / 5.0 (2,300+ reviews)', price: '200,000 - 320,000 VND (~¥58-92)',
+          mapQuery: '99+Chau+Van+Liem+Ward+14+District+5+HCMC'
+        },
+        {
+          id: 'sg-33', rank: '33', name: 'Cơm Niêu Sài Gòn',
+          dishVi: 'Cơm đập cháy giòn cá kho tộ', dishZh: '飞天杂技抛土锅锅巴配陶罐红烧鱼',
+          address: '27 Tú Xương, P. Võ Thị Sáu, Quận 3, TP.HCM', category: 'mains', categoryLabel: 'Regional Classics',
+          district: 'District 3 (Colonial Villa Zone)',
+          note: 'The spectacle of cracking open clay pots and catching flying crispy rice across the room. Savor with caramelized river goby in clay pots.',
+          vibe: 'Upscale colonial mansion • Theatrical and refined',
+          rating: '4.3 / 5.0 (4,700+ reviews)', price: '150,000 - 300,000 VND (~¥43-86)',
+          mapQuery: '27+Tu+Xuong+District+3+HCMC'
+        },
+        {
+          id: 'sg-34', rank: '34', name: 'Bánh Canh Ghẹ Muối Ớt Xanh',
+          dishVi: 'Bánh canh ghẹ nguyên con lột vỏ', dishZh: '手剥整只鲜花蟹浓汤粗粉配绿辣酱',
+          address: '484 Nguyễn Tri Phương, P.9, Quận 10, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 10',
+          note: 'Freshly de-shelled whole blue flower crab sitting atop rich, creamy seafood broth with bouncy tapioca noodles and lime-chili salt.',
+          vibe: 'Bustling seafood noodle station • Fresh and oceanic',
+          rating: '4.3 / 5.0 (2,800+ reviews)', price: '75,000 - 110,000 VND (~¥22-32)',
+          mapQuery: '484+Nguyen+Tri+Phuong+Ward+9+District+10+HCMC'
+        },
+        {
+          id: 'sg-35', rank: '35', name: 'Mì Trộn Cô Có',
+          dishVi: 'Mì trộn tóp mỡ lòng đào súp tôm', dishZh: '秘制香辣猪油渣拌方便面配生滚虾滑汤',
+          address: 'Hẻm 38 Trần Kế Xương, P.7, Q. Phú Nhuận', category: 'noodles', categoryLabel: 'Dry Tossed Noodles',
+          district: 'Phú Nhuận Alleyways',
+          note: 'Alley culinary sensation. Instant noodles tossed in spicy chili paste and golden pork fat cracklings, paired with fresh shrimp paste soup.',
+          vibe: 'True Saigon alley energy • Addictive spicy crunch',
+          rating: '4.4 / 5.0 (1,900+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '38+Tran+Ke+Xuong+Ward+7+Phu+Nhuan+HCMC'
+        },
+        {
+          id: 'sg-36', rank: '36', name: 'Cháo Lòng Chợ Bà Chiểu',
+          dishVi: 'Cháo lòng dồi chiên má heo', dishZh: '芭沼市场生滚猪血粥配酥脆肥肠',
+          address: 'Góc Bùi Hữu Nghĩa, P.1, Q. Bình Thạnh', category: 'snacks', categoryLabel: 'Comfort Porridge',
+          district: 'Bình Thạnh (Bà Chiểu Market)',
+          note: 'Market edge night stall since the late 1960s. Robust blood pudding rice porridge paired with tender boiled pork cheek and fried sausage.',
+          vibe: 'Nocturnal market atmosphere • Warm & rustic',
+          rating: '4.3 / 5.0 (1,150+ reviews)', price: '35,000 - 55,000 VND (~¥10-16)',
+          mapQuery: 'Bui+Huu+Nghia+Ward+1+Binh+Thanh+HCMC'
+        },
+        {
+          id: 'sg-37', rank: '37', name: 'Dimsum Tiến Phát',
+          dishVi: 'Há cảo tôm tươi xíu mại cua', dishZh: '点心名家晶莹透亮鲜虾饺配蟹籽烧卖',
+          address: '18 Ký Hòa, P.11, Quận 5, TP.HCM', category: 'snacks', categoryLabel: 'Cantonese Dumplings',
+          district: 'District 5 (Chợ Lớn Chinatown)',
+          note: 'Early morning Chinatown breakfast benchmark. Translucent crystal prawn har gow, crab roe siu mai, and warm jasmine tea.',
+          vibe: 'Classic 7:00 AM breakfast frenzy • Unchanged for decades',
+          rating: '4.4 / 5.0 (3,600+ reviews)', price: '50,000 - 85,000 VND (~¥14-25)',
+          mapQuery: '18+Ky+Hoa+Ward+11+District+5+HCMC'
+        },
+        {
+          id: 'sg-38', rank: '38', name: 'Bún Cá Rô Đồng Quê',
+          dishVi: 'Bún cá rô chiên giòn thì là', dishZh: '金黄去骨脆皮鲫鱼莳萝番茄酸汤米线',
+          address: '22 Huỳnh Tịnh Của, P.8, Quận 3, TP.HCM', category: 'noodles', categoryLabel: 'Southern Broths & Noodles',
+          district: 'District 3',
+          note: 'Deboned crispy perch fillets swimming in a tangy tomato-dill broth, served with wild water celery and fresh rice noodles.',
+          vibe: 'Clean, charming alley cafe atmosphere • Light & fresh',
+          rating: '4.4 / 5.0 (1,250+ reviews)', price: '45,000 - 65,000 VND (~¥13-19)',
+          mapQuery: '22+Huynh+Tinh+Cua+Ward+8+District+3+HCMC'
+        },
+        {
+          id: 'sg-39', rank: '39', name: 'Bột Chiên Hải Ký',
+          dishVi: 'Bột chiên khoai môn giòn hai mặt', dishZh: '潮汕风味香芋煎米糕块配双蛋',
+          address: '357 Hải Thượng Lãn Ông, P.10, Quận 5', category: 'snacks', categoryLabel: 'Street & Alleyways',
+          district: 'District 5 (Traditional Herb District)',
+          note: 'Taro-infused rice flour cakes crisped on a flat griddle with twin eggs and scallions. Crisp edges, chewy heart, sweet soy condiment.',
+          vibe: 'Historic herbal medicine street corner • Fragrant and nostalgic',
+          rating: '4.3 / 5.0 (1,450+ reviews)', price: '35,000 - 50,000 VND (~¥10-15)',
+          mapQuery: '357+Hai+Thuong+Lan+Ong+Ward+10+District+5+HCMC'
+        },
+        {
+          id: 'sg-40', rank: '40', name: 'Chè Tàu Cột Điện (Chè Nhà Đèn)',
+          dishVi: 'Hột gà trà thảo mộc quy linh cao', dishZh: '八十年街灯老字号红茶养生煮蛋配龟苓膏',
+          address: '476 Trần Hưng Đạo B, P.14, Quận 5, TP.HCM', category: 'dessert', categoryLabel: 'Desserts & Sweets',
+          district: 'District 5 (Chợ Lớn Chinatown)',
+          note: 'Famous 80-year-old dessert stand beside the historic lamp pole. Hard-boiled eggs steeped in black herbal tea and honeyed herbal jelly.',
+          vibe: 'Chinatown late-night landmark • Soothing sweet tonic',
+          rating: '4.4 / 5.0 (3,900+ reviews)', price: '25,000 - 45,000 VND (~¥7-13)',
+          mapQuery: '476+Tran+Hung+Dao+B+Ward+14+District+5+HCMC'
+        }
+      ]
+    };
+
+    // State
+    let currentCity = 'hanoi';
+    let currentCategory = 'all';
+    let currentSearchQuery = '';
+    let currentModalSpot = null;
+    let toastTimeout = null;
+
+    // Toast Notification helper (No alert/confirm)
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-text');
+      text.textContent = message;
+      
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+
+    // Safe clipboard execution helper
+    function copyToClipboard(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMsg || 'Copied to clipboard');
+      } catch (err) {
+        console.error('Copy fallback failed', err);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    // Switch between Hanoi & Saigon
+    function switchCity(city) {
+      currentCity = city;
+      currentCategory = 'all';
+      currentSearchQuery = '';
+      document.getElementById('search-input').value = '';
+      document.getElementById('search-clear-btn').classList.add('hidden');
+
+      const btnHanoi = document.getElementById('tab-hanoi');
+      const btnSaigon = document.getElementById('tab-saigon');
+
+      if (city === 'hanoi') {
+        btnHanoi.className = 'flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition bg-slateDark text-ivory shadow-sm';
+        btnSaigon.className = 'flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition text-stone-600 hover:text-slateDark';
+      } else {
+        btnSaigon.className = 'flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition bg-slateDark text-ivory shadow-sm';
+        btnHanoi.className = 'flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition text-stone-600 hover:text-slateDark';
+      }
+
+      updateCategoryPillsUI();
+      renderSpots();
+    }
+
+    // Filter by Category
+    function setCategory(cat) {
+      currentCategory = cat;
+      updateCategoryPillsUI();
+      renderSpots();
+    }
+
+    function updateCategoryPillsUI() {
+      const pills = document.querySelectorAll('.cat-pill');
+      pills.forEach(pill => {
+        const cat = pill.getAttribute('data-cat');
+        if (cat === currentCategory) {
+          pill.className = 'cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-slateDark text-white shadow-xs';
+        } else {
+          pill.className = 'cat-pill text-[11px] px-3 py-1.5 rounded-lg transition font-medium bg-concrete text-stone-600 hover:bg-stone-200';
+        }
+      });
+    }
+
+    // Search filtering
+    function handleSearch(query) {
+      currentSearchQuery = query.toLowerCase().trim();
+      const clearBtn = document.getElementById('search-clear-btn');
+      if (currentSearchQuery) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderSpots();
+    }
+
+    function clearSearch() {
+      document.getElementById('search-input').value = '';
+      currentSearchQuery = '';
+      document.getElementById('search-clear-btn').classList.add('hidden');
+      renderSpots();
+    }
+
+    // Render Cards in Grid
+    function renderSpots() {
+      const grid = document.getElementById('spots-grid');
+      const emptyState = document.getElementById('empty-state');
+      const countLabel = document.getElementById('spots-count-label');
+
+      let list = restaurantsData[currentCity] || [];
+
+      if (currentCategory !== 'all') {
+        list = list.filter(item => item.category === currentCategory);
+      }
+
+      if (currentSearchQuery) {
+        const q = currentSearchQuery;
+        list = list.filter(item => 
+          item.name.toLowerCase().includes(q) ||
+          item.dishVi.toLowerCase().includes(q) ||
+          item.dishZh.toLowerCase().includes(q) ||
+          item.address.toLowerCase().includes(q) ||
+          item.district.toLowerCase().includes(q) ||
+          item.note.toLowerCase().includes(q)
+        );
+      }
+
+      const cityName = currentCity === 'hanoi' ? 'Hanoi' : 'Ho Chi Minh City';
+      countLabel.textContent = `Showing ${list.length} of 40 curated locations in ${cityName}`;
+
+      if (list.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = list.map(spot => `
+        <div class="group bg-white rounded-2xl border border-stone-200 p-5 flex flex-col justify-between hover:shadow-md hover:border-slateDark/50 transition-all duration-200">
+          <div class="space-y-3.5">
+            
+            <!-- Card Badge & Rank -->
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[11px] font-semibold text-terracotta bg-terracotta/10 px-2.5 py-0.5 rounded">
+                #${spot.rank} • ${spot.district}
+              </span>
+              <span class="text-[10px] font-mono text-stone-400">
+                ${spot.categoryLabel}
+              </span>
+            </div>
+
+            <!-- Venue Name -->
+            <div>
+              <h3 class="font-serif text-base font-bold text-slateDark group-hover:text-terracotta transition-colors leading-snug">
+                ${spot.name}
+              </h3>
+              <p class="text-[11px] text-stone-400 font-mono mt-0.5">${spot.rating}</p>
+            </div>
+
+            <!-- Must-Try Signature Dish with Chinese translation -->
+            <div class="p-3 rounded-xl bg-ivory border border-stone-200/80 space-y-1">
+              <span class="text-[10px] font-mono uppercase tracking-wider text-terracotta block font-semibold">
+                Must-Try Signature:
+              </span>
+              <div class="text-xs font-semibold text-stone-900 leading-tight">
+                ${spot.dishVi}
+              </div>
+              <div class="text-xs text-terracotta font-medium font-chinese">
+                (${spot.dishZh})
+              </div>
+            </div>
+
+            <!-- Solo Field Note -->
+            <p class="text-xs text-stone-600 leading-relaxed">
+              ${spot.note}
+            </p>
+
+          </div>
+
+          <!-- Bottom Meta & Action -->
+          <div class="pt-4 mt-2 border-t border-stone-100 space-y-2">
+            <div class="flex items-center justify-between text-[11px] text-stone-500 font-mono">
+              <span class="truncate pr-2">${spot.price}</span>
+            </div>
+
+            <button
+              onclick="openSpotModal('${spot.id}')"
+              class="w-full py-2.5 px-3 rounded-xl bg-concrete hover:bg-slateDark text-slateDark hover:text-white text-xs font-medium transition flex items-center justify-center space-x-1.5 shadow-xs"
+            >
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+              <span>View on Google Maps</span>
+            </button>
+          </div>
+
+        </div>
+      `).join('');
+
+      // Refresh Lucide Icons on dynamic elements
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
+    // Modal Operations
+    function openSpotModal(spotId) {
+      const list = restaurantsData[currentCity] || [];
+      const spot = list.find(s => s.id === spotId);
+      if (!spot) return;
+
+      currentModalSpot = spot;
+
+      document.getElementById('modal-name').textContent = spot.name;
+      document.getElementById('modal-district').textContent = spot.district;
+      document.getElementById('modal-address').textContent = spot.address;
+      document.getElementById('modal-dish-vi').textContent = spot.dishVi;
+      document.getElementById('modal-dish-zh').textContent = spot.dishZh;
+      document.getElementById('modal-vibe').textContent = spot.vibe;
+      
+      const mapLink = document.getElementById('modal-map-link');
+      mapLink.href = `https://www.google.com/maps/search/?api=1&query=${spot.mapQuery}`;
+
+      const container = document.getElementById('modal-container');
+      container.classList.remove('hidden');
+      container.classList.add('flex');
+
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
+    function closeModal() {
+      const container = document.getElementById('modal-container');
+      container.classList.add('hidden');
+      container.classList.remove('flex');
+      currentModalSpot = null;
+    }
+
+    function copyCurrentModalAddress() {
+      if (!currentModalSpot) return;
+      copyToClipboard(currentModalSpot.address, 'Address copied to clipboard for Grab navigation.');
+    }
+
+    // Close modal on escape key or backdrop click
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    document.getElementById('modal-container').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('modal-container')) {
+        closeModal();
+      }
+    });
+
+    // Initialize on page load
+    window.onload = function() {
+      renderSpots();
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    };
+  </script>
+</body>
+</html>
